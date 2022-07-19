@@ -1,0 +1,22 @@
+.logoBox {
+    width: 160px;
+    height: 160px;
+    margin: 0.5rem 0;
+}
+
+.seeMore {
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.show {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 0.5rem 0;
+}
+
+.hidden {
+    display: none;
+}

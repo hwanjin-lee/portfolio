@@ -1,0 +1,85 @@
+.container {
+    background-color: var(--color-box);
+    box-shadow: 0px 3px 6px var(--color-box-shadow);
+    width: 300px;
+    position: sticky;
+    bottom: 0px;
+    left: 10000px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 3px 6px var(--color-box-shadow);
+}
+
+.header:hover {
+    background-color: var(--color-hover);
+}
+
+.content {
+    padding: 2rem 1rem 1rem;
+}
+
+.messageMe {
+    display: flex;
+    align-items: center;
+}
+
+.fillSpace {
+    padding-bottom: 1rem;
+}
+
+.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    height: 560px;
+    transition: height 0.2s, opacity 0.2s linear;
+  }
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    transition: height 0.2s, opacity 0.2s linear;
+}
+
+.profileImg {
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.online {
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    border: 3px solid white;
+    border-radius: 1rem;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.input {
+    margin-bottom: 2rem;
+}
+
+.textarea {
+    margin-bottom: 0;
+}
+
+.submitBtn {
+    margin: 1rem 0;
+    background-color: var(--color-link);
+    color: #fff;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    width: 100%;
+    cursor: pointer;
+}

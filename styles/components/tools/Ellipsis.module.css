@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 4rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: var(--color-hover);
+    transition: all 0.5s;
+}
+
+.ellipsis {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: var(--color-secondary-font);
+}

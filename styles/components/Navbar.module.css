@@ -1,0 +1,20 @@
+.container {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    z-index: 999;
+    padding: 0 2rem;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+}

@@ -1,0 +1,33 @@
+.container {
+    padding-top: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+.button:active .icon {
+    transform: rotate(-0.1turn);
+    transition: all 0.1s linear;
+}
+
+.reaction {
+    height: 20px;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,31 @@
+.container {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    height: 2rem;
+    width: 2rem;
+    color: var(--color-primary-accent);
+}
+
+.links:hover {
+    background-color: var(--color-input);
+    box-shadow: 0px 0px 0.5em 0.5rem var(--color-input);
+}
+
+.iconLinkedin {
+    background: #fff;
+    border-radius: 5px;
+}
