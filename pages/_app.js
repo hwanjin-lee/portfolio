@@ -6,22 +6,26 @@ import { handleSeeMore } from '../components/tools/seeMore';
 function MyApp({ Component, pageProps }) {
   //===========================================================================================
   const [darkTheme, setDarkTheme] = useState(undefined);
+  const [minimizedState, setMinimizedState] = useState(0);
+
   const handleToggle = (event) => {
     setDarkTheme(event.target.checked);
   };
+
   useEffect(() => {
     if (darkTheme !== undefined) {
       if (darkTheme) {
-        // Set value of  darkmode to dark
+        // Set value of darkmode to dark
         document.documentElement.setAttribute('data-theme', 'dark');
         window.localStorage.setItem('theme', 'dark');
       } else {
-        // Set value of  darkmode to light
+        // Set value of darkmode to light
         document.documentElement.removeAttribute('data-theme');
         window.localStorage.setItem('theme', 'light');
       }
     }
   }, [darkTheme]);
+
   useEffect(() => {
     const root = window.document.documentElement;
     const initialColorValue = root.style.getPropertyValue(
@@ -31,15 +35,6 @@ function MyApp({ Component, pageProps }) {
     setDarkTheme(initialColorValue === 'dark');
   }, []);
 
-
-
-  //Commenting section, when comment button pressed, activate the message tab.
-
-  const [minimizedState, setMinimizedState] = useState(0);
-
-  const handleComment = () => {
-    // handleSeeMore(minimizedState, setMinimizedState)}
-  }
 
   //===========================================================================================
   const section1Ref = useRef();

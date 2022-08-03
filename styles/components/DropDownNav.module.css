@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.sun,
+.moon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.sun {
+    color: yellow;
+
+}
+
+.moon {
+    color: white;
+}

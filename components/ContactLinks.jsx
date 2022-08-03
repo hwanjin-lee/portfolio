@@ -18,7 +18,7 @@ const ContactLinks = () => {
           <FontAwesomeIcon icon={faLinkedin} className={styles.icons} />
         </a>
       </Link>
-      <Link href="https://github.com/hjlee989">
+      <Link href="https://github.com/hwanjin-lee">
         <a className={styles.links} target="_blank">
           <FontAwesomeIcon icon={faGithub} className={styles.icons} />
         </a>
@@ -36,9 +36,9 @@ const ContactLinks = () => {
       >
         <FontAwesomeIcon icon={faEnvelope} className={styles.icons} />
       </a>
-      <a className={styles.links}>
+      {/* <a className={styles.links}>
         <FontAwesomeIcon icon={faSquarePhone} className={styles.icons} />
-      </a>
+      </a> */}
     </div>
   );
 };
