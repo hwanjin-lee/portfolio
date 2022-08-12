@@ -6,7 +6,7 @@ const Input = ({ placeholder, helper, icon }) => {
   return (
     <div className={styles.container}>
       <label>
-        <input className={styles.input} maxlength="100" required />
+        <input className={styles.input} maxLength="100" required />
         <span className={styles.placeholder}>{placeholder}</span>
         <span className={styles.helper}>{helper}</span>
         <div className={styles.inputIcon}>{icon}</div>

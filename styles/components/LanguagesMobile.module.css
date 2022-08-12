@@ -1,0 +1,28 @@
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content {
+    padding-bottom: 1rem;
+}
+
+.individualStack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 20px;
+    margin: 0.5rem;
+}
+
+/* For tablets */
+
+
+/* For smartphones */
+@media only screen and (min-width: 1200px) {
+    .container {
+      display: none;
+    }
+  }

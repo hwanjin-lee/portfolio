@@ -3,7 +3,7 @@ import styles from "../styles/components/ScrollHighlightNabbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-  faHandPeace as farHouse,
+  faHandPointUp as farHouse,
   faUser as farUser,
   faFloppyDisk as farFloppyDisk,
   faNewspaper as farNewsPaper,
@@ -110,8 +110,8 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
               icon={activeIndex === 0 ? fasHouse : farHouse}
               className={styles.icon}
             />
+            <div className={styles.navtitle}>{navHeader[0].headerTitle}</div>
           </div>
-          <div className={styles.navtitle}>{navHeader[0].headerTitle}</div>
         </a>
         <div
           className={styles.underline}
@@ -133,8 +133,8 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
               icon={activeIndex === 1 ? fasUser : farUser}
               className={styles.icon}
             />
+            <div className={styles.navtitle}>{navHeader[1].headerTitle}</div>
           </div>
-          <div className={styles.navtitle}>{navHeader[1].headerTitle}</div>
         </a>
         <div
           className={styles.underline}
@@ -156,8 +156,8 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
               icon={activeIndex === 2 ? fasFloppyDisk : farFloppyDisk}
               className={styles.icon}
             />
+            <div className={styles.navtitle}>{navHeader[2].headerTitle}</div>
           </div>
-          <div className={styles.navtitle}>{navHeader[2].headerTitle}</div>
         </a>
         <div
           className={styles.underline}
@@ -179,8 +179,8 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
               icon={activeIndex === 3 ? fasNewsPaper : farNewsPaper}
               className={styles.icon}
             />
+            <div className={styles.navtitle}>{navHeader[3].headerTitle}</div>
           </div>
-          <div className={styles.navtitle}>{navHeader[3].headerTitle}</div>
         </a>
         <div
           className={styles.underline}

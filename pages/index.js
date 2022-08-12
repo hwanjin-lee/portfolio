@@ -4,10 +4,11 @@ import About from "../components/About";
 import Blog from "../components/Blog";
 import Experiences from "../components/Experiences";
 import Intro from "../components/Intro";
-import Skills from "../components/Skills";
 import Education from "../components/Education";
 import styles from "../styles/Home.module.css";
 import Cards from "../components/Cards";
+import LanguagesMobile from '../components/LanguagesMobile';
+import ProfileMobile from "../components/ProfileMobile";
 
 const HomePage = ({section1Ref, section2Ref, section3Ref, section4Ref, onComment}) => {
 
@@ -19,12 +20,14 @@ const HomePage = ({section1Ref, section2Ref, section3Ref, section4Ref, onComment
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="section" ref={section1Ref} id="section1">
-          <Cards/>
+          <ProfileMobile/>
+          {/* TODO: Resizing for the cards. */}
+          {/* <Cards/> */}
           <Intro/>
         </div>
         <div className="section" ref={section2Ref} id="section2">
           <About onComment={onComment}/>
-          {/* <Skills/> */}
+          <LanguagesMobile onComment={onComment}/>
           <Education onComment={onComment}/>
         </div>
         <div className="section" ref={section3Ref} id="section3">

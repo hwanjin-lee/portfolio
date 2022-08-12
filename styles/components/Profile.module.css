@@ -86,3 +86,14 @@
     background-color: var(--color-navIcon);
     margin: 0 .2rem .4rem;
 }
+
+
+/* For tablets */
+
+
+/* For smartphones */
+@media only screen and (max-width: 1200px) {
+    .size {
+      display: none;
+    }
+  }

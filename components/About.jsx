@@ -6,7 +6,7 @@ import Likes from "./reusable/Likes";
 
 const About = ({ onComment }) => {
   return (
-    <div className={styles.container}>
+    <div>
       <div id="about"></div>
       <div className="box">
         <div className="boxHeader">
@@ -19,11 +19,11 @@ const About = ({ onComment }) => {
               <div className="boxSecondary">Front-End Web Developer</div>
             </div>
           </div>
-          <div className={styles.headerIcon}>
+          <div>
             <Ellipsis />
           </div>
         </div>
-        <div className={styles.content}>
+        <div>
           I'm a software engineer specialized in front-end development with
           background of visual graphic experiences. I got interested in coding
           when I was doing database computer tasking through company's website.

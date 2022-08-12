@@ -7,62 +7,84 @@ const Languages = () => {
   const [display, setDisplay] = useState(0);
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className="box">
         <div>Languages</div>
         <hr />
-        <div className="flex">
-          <Image src="/logos/html5.png" width="20px" height="20px" />
-          <div>HTML</div>
+        <div className={styles.stackContainer}>
+          <div className="flex">
+            <Image src="/logos/html5.png" width="20px" height="20px" />
+            <div className="spaceLeft">HTML</div>
+          </div>
         </div>
-        <div className="flex">
-          <Image src="/logos/css3.png" width="20px" height="20px" />
-          <div>CSS</div>
+        <div className={styles.stackContainer}>
+          <div className="flex">
+            <Image src="/logos/css3.png" width="20px" height="20px" />
+            <div className="spaceLeft">CSS</div>
+          </div>
         </div>
-        <div className="flex">
-          <Image src="/logos/javascript.png" width="20px" height="20px" />
-          <div>JavaScript</div>
+        <div className={styles.stackContainer}>
+          <div className="flex">
+            <Image src="/logos/javascript.png" width="20px" height="20px" />
+            <div className="spaceLeft">JavaScript</div>
+          </div>
         </div>
-        <div className="flex">
-          <Image src="/logos/typescript.png" width="20px" height="20px" />
-          <div>TypeScript</div>
+        <div className={styles.stackContainer}>
+          <div className="flex">
+            <Image src="/logos/typescript.png" width="20px" height="20px" />
+            <div className="spaceLeft">TypeScript</div>
+          </div>
         </div>
         <div className={styles.title}>Stack / Libraries</div>
         <hr />
-        <div className="flex">
-          <Image src="/logos/react.png" width="20px" height="20px" />
-          <div>React.js</div>
-        </div>
-        <div className="flex">
-          <Image src="/logos/nextjs.png" width="20px" height="20px" />
-          <div>Next.js</div>
-        </div>
-        <div className="flex">
-          <Image src="/logos/angular.png" width="20px" height="20px" />
-          <div>Angular</div>
-        </div>
-        <div className={styleSeeMore(display, styles.show, styles.hide)}>
+        <div className={styles.stackContainer}>
           <div className="flex">
-            <Image src="/logos/postman.png" width="20px" height="20px" />
-            <div>Postman</div>
+            <Image src="/logos/react.png" width="20px" height="20px" />
+            <div className="spaceLeft">React.js</div>
+          </div>
+        </div>
+        <div className={styles.stackContainer}>
+          <div className="flex">
+            <Image src="/logos/nextjs.png" width="20px" height="20px" />
+            <div className="spaceLeft">Next.js</div>
+          </div>
+        </div>
+        <div className={styles.stackContainer}>
+          <div className="flex">
+            <Image src="/logos/angular.png" width="20px" height="20px" />
+            <div className="spaceLeft">Angular</div>
           </div>
         </div>
         <div className={styleSeeMore(display, styles.show, styles.hide)}>
-          <div className="flex">
-            <Image src="/logos/git.png" width="20px" height="20px" />
-            <div>Git</div>
+          <div className={styles.stackContainer}>
+            <div className="flex">
+              <Image src="/logos/postman.png" width="20px" height="20px" />
+              <div className="spaceLeft">Postman</div>
+            </div>
           </div>
         </div>
         <div className={styleSeeMore(display, styles.show, styles.hide)}>
-          <div className="flex">
-            <Image src="/logos/mongoDB.png" width="20px" height="20px" />
-            <div>MongoDB</div>
+          <div className={styles.stackContainer}>
+            <div className="flex">
+              <Image src="/logos/git.png" width="20px" height="20px" />
+              <div className="spaceLeft">Git</div>
+            </div>
           </div>
         </div>
         <div className={styleSeeMore(display, styles.show, styles.hide)}>
-          <div className="flex">
-            <Image src="/logos/nodejs.png" width="20px" height="20px" />
-            <div>Node.js</div>
+          <div className={styles.stackContainer}>
+            <div className="flex">
+              <Image src="/logos/mongoDB.png" width="20px" height="20px" />
+              <div className="spaceLeft">MongoDB</div>
+            </div>
+          </div>
+        </div>
+        <div className={styleSeeMore(display, styles.show, styles.hide)}>
+          <div className={styles.stackContainer}>
+            <div className="flex">
+              <Image src="/logos/nodejs.png" width="20px" height="20px" />
+              <div className="spaceLeft">Node.js</div>
+            </div>
           </div>
         </div>
         <hr />

@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.sun,
+.moon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    color: var(--color-navIcon);
+    border-radius: 3rem;
+}
+
+.sun:hover,
+.moon:hover {
+    color: yellow;
+    transition: all 0.2s linear;
+}
+
+.sun:hover {
+    background-color: #828282;
+    box-shadow: 0 0 12px 12px #828282;
+}
+
+.moon:hover {
+    background-color: #464646;
+    box-shadow: 0 0 15px 15px #464646;
+}

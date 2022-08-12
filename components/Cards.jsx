@@ -9,7 +9,7 @@ const Cards = () => {
       <div className="card">
         <div className={styles.firstCard}>
           <div className={styles.firstCardContent}>
-            <div className={styles.plusSign}>+</div>
+            {/* <div className={styles.plusSign}>+</div> */}
             <div className={styles.myStory}>my story</div>
           </div>
         </div>

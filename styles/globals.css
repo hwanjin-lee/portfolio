@@ -37,7 +37,7 @@ body {
   --color-secondary-font: #797979;
   --color-box: #fff;
   --color-box-shadow: #c7c7c7;
-  --color-hover: #e8e8e8;
+  --color-hover: #1A237E;
   --color-input: #f0f0f0;
   --color-input-focus: #e8e8f1;
   --color-post: #fff;
@@ -149,17 +149,23 @@ a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  padding: 1rem 0;
+  background-color: var(--color-box);
+  margin: 1rem 0;
+}
+
+.picture {
   background-color: var(--color-post);
-  margin: 2rem 0;
+  border: 1px solid var(--color-box);
+  width: 340px;
+  height: 340px;
 }
 
 .boxHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 36px;
-  padding: 3rem 0
+  padding: 0.5rem 0 1rem 0
 }
 
 .boxHeaderImg {
@@ -172,11 +178,16 @@ a {
 .flex,
 .boxFlex {
   display: flex;
-  height: 3.6rem;
+  align-items: center;
 }
 
-.flex {
-  align-items: center;
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spaceLeft {
+  margin-left: 0.5rem;
 }
 
 .boxPrimary {

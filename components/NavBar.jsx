@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "../styles/components/Navbar.module.css";
 import ScrollHighlightNabbar from "../components/ScrollHighlightNabbar";
-import DropDownNav from "./DropDownNav";
+import DarkMode from "./DarkMode";
 
 const NavBar = ({ onToggle, darkTheme, navHeader }) => {
   return (
@@ -11,7 +11,7 @@ const NavBar = ({ onToggle, darkTheme, navHeader }) => {
         <Image src="/img/logo.png" alt="" width="40px" height="40px" />
       </div>
       <ScrollHighlightNabbar navHeader={navHeader} />
-      <DropDownNav darkTheme={darkTheme} onToggle={onToggle} />
+      <DarkMode darkTheme={darkTheme} onToggle={onToggle} />
     </div>
   );
 };

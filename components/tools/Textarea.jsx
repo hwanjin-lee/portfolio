@@ -8,7 +8,7 @@ const Textarea = () => {
         <textarea
           className={styles.textarea}
           placeholder="Say hello!"
-          maxlength="2000"
+          maxLength="1000"
         />
       </label>
     </div>

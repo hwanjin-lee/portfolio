@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/components/DropDownNav.module.css";
+import styles from "../styles/components/DarkMode.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
