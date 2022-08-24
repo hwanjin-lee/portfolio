@@ -30,11 +30,12 @@ const Profile = () => {
             </div>
             <hr />
             <div className={styles.interests}>
-              <div className={styles.interestBox}>#cars</div>
+              <div className={styles.interestBox}>#road trips</div>
+              <div className={styles.interestBox}>#cats</div>
+              <div className={styles.interestBox}>#snowboarding</div>
+              <div className={styles.interestBox}>#surfing</div>
+              <div className={styles.interestBox}>#hiking</div>
               <div className={styles.interestBox}>#gunpla</div>
-              <div className={styles.interestBox}>#leagueoflegends</div>
-              <div className={styles.interestBox}>#snowboard</div>
-              <div className={styles.interestBox}>#three.js</div>
             </div>
             <hr />
             <ContactLinks />

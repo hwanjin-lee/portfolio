@@ -1,14 +1,12 @@
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .cardContent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
-    z-index: 2;
     color: #fff;
 }
 
@@ -23,30 +21,4 @@
     position: absolute;
     border-radius: 2rem;
     overflow: hidden;
-    width: 130px;
-    height: 230px;
 }
-
-.firstCardContent {
-    background-color: var(--color-background);
-    height: 50px;
-    width: 130px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.plusSign {
-    font-size: 3rem;
-    background-color: var(--color-primary);
-    border: 0.5rem solid var(--color-background);
-    padding: 0 1rem 0.3rem 1rem;
-    border-radius: 3rem;
-    position: absolute;
-    top: 230px;
-}
-
-/* .myStory {
-    color: ;
-} */

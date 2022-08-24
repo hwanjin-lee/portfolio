@@ -46,22 +46,22 @@ function MyApp({ Component, pageProps }) {
     {
       headerTitle: "Home",
       headerRef: section1Ref,
-      headerID: "section1",
+      headerID: "home",
     },
     {
       headerTitle: "About",
       headerRef: section2Ref,
-      headerID: "section2",
+      headerID: "about",
     },
     {
       headerTitle: "Work",
       headerRef: section3Ref,
-      headerID: "section3",
+      headerID: "work",
     },
     {
       headerTitle: "Blog",
       headerRef: section4Ref,
-      headerID: "section4",
+      headerID: "blog",
     },
   ];
   //===========================================================================================

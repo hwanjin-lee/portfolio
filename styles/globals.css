@@ -112,7 +112,7 @@ a {
   background-color: var(--color-box);
   border-radius: 2rem;
   box-shadow: 0px 3px 6px var(--color-box-shadow);
-  width: 130px;
+  max-width: 130px;
   height: 230px;
   margin: 2.5rem 0 0 0;
   overflow: hidden;

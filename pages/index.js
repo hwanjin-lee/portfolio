@@ -9,6 +9,7 @@ import styles from "../styles/Home.module.css";
 import Cards from "../components/Cards";
 import LanguagesMobile from '../components/LanguagesMobile';
 import ProfileMobile from "../components/ProfileMobile";
+import Personality from "../components/personality";
 
 const HomePage = ({section1Ref, section2Ref, section3Ref, section4Ref, onComment}) => {
 
@@ -19,21 +20,21 @@ const HomePage = ({section1Ref, section2Ref, section3Ref, section4Ref, onComment
           <meta name="Hwanjin Lee" content="Portfolio" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className="section" ref={section1Ref} id="section1">
+        <div className="section" ref={section1Ref} id="home">
           <ProfileMobile/>
-          {/* TODO: Resizing for the cards. */}
+          <Personality/>
           {/* <Cards/> */}
           <Intro/>
         </div>
-        <div className="section" ref={section2Ref} id="section2">
+        <div className="section" ref={section2Ref} id="about">
           <About onComment={onComment}/>
           <LanguagesMobile onComment={onComment}/>
           <Education onComment={onComment}/>
         </div>
-        <div className="section" ref={section3Ref} id="section3">
+        <div className="section" ref={section3Ref} id="work">
           <Experiences onComment={onComment}/>
         </div>
-        <div className="section" ref={section4Ref} id="section4">
+        <div className="section" ref={section4Ref} id="blog">
           <Blog/>
         </div>
       </div>
