@@ -38,11 +38,13 @@ body {
   --color-box: #fff;
   --color-box-shadow: #c7c7c7;
   --color-hover: #1A237E;
+  --color-messageHover: #c7c7c7;
   --color-input: #f0f0f0;
   --color-input-focus: #e8e8f1;
   --color-post: #fff;
   --color-link: #3F51B5;
   --color-navIcon: #9FA8DA;
+  --color-interest: #d5d9ee;
   --color-navMenuButton: #B3B3B3;
 }
 
@@ -56,11 +58,13 @@ body {
   --color-box: #2A2A2A;
   --color-box-shadow: #121212;
   --color-hover: #535353;
+  --color-messageHover: #535353;
   --color-input: #535353;
   --color-input-focus: #2A2A2A;
   --color-post: #fff;
   --color-link: #3F51B5;
   --color-navIcon: #B3B3B3;
+  --color-interest: #535874;
   --color-navMenuButton: #535353;
 }
 

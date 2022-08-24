@@ -19,7 +19,7 @@
 }
 
 .header:hover {
-    background-color: var(--color-hover);
+    background-color: var(--color-messageHover);
 }
 
 .content {
