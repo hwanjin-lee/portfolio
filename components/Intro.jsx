@@ -14,7 +14,7 @@ const Intro = () => {
             </div>
             <div className={styles.post}>
               <div className={styles.fakeInput}>
-                Hello, I &apos;m Hwanjin! I am a...
+                Hello, I&apos;m Hwanjin! I am a...
               </div>
             </div>
           </div>
