@@ -28,7 +28,7 @@ const ProfileMobile = () => {
             </div>
             <div className={styles.quote}>
               <div className={styles.quoteWidth}>
-                "I'm a developer that love to build, learn, and find new
+                "I&apos;m a developer that love to build, learn, and find new
                 opportunities to make things come to life!"
               </div>
             </div>
