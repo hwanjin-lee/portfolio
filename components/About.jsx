@@ -24,11 +24,12 @@ const About = ({ onComment }) => {
           </div>
         </div>
         <div>
-          I'm a software engineer specialized in front-end development with
-          background of visual graphic experiences. I got interested in coding
-          when I was doing database computer tasking through company's website.
-          It all started with a thought of how much more efficiently a task
-          could be completed with better web design and functionality.
+          I &apos;m a software engineer specialized in front-end development
+          with background of visual graphic experiences. I got interested in
+          coding when I was doing database computer tasking through company
+          &apos;s website. It all started with a thought of how much more
+          efficiently a task could be completed with better web design and
+          functionality.
         </div>
         <Likes onComment={onComment} />
       </div>

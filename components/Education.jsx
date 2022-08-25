@@ -22,10 +22,10 @@ const Education = ({ onComment }) => {
       </div>
       <div>
         I graduated with Graphic Arts and Design where I focused learning about
-        print, digital UI designs, color sets, and more using mostly Adobe's
-        creative cloud softwares. The school challenged me to explore many
-        different direction of career paths that I could take. I knew I wanted
-        to do something that involved creativity. That is why I have
+        print, digital UI designs, color sets, and more using mostly Adobe
+        &apos;s creative cloud softwares. The school challenged me to explore
+        many different direction of career paths that I could take. I knew I
+        wanted to do something that involved creativity. That is why I have
         transitioned my career into web development.
       </div>
       <Likes onComment={onComment} />
