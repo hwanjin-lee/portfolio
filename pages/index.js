@@ -6,10 +6,9 @@ import Experiences from "../components/Experiences";
 import Intro from "../components/Intro";
 import Education from "../components/Education";
 import styles from "../styles/Home.module.css";
-import Cards from "../components/Cards";
 import LanguagesMobile from '../components/LanguagesMobile';
 import ProfileMobile from "../components/ProfileMobile";
-import Personality from "../components/personality";
+import Personality from "../components/Personality";
 
 const HomePage = ({section1Ref, section2Ref, section3Ref, section4Ref, onComment}) => {
 
@@ -23,7 +22,6 @@ const HomePage = ({section1Ref, section2Ref, section3Ref, section4Ref, onComment
         <div className="section" ref={section1Ref} id="home">
           <ProfileMobile/>
           <Personality/>
-          {/* <Cards/> */}
           <Intro/>
         </div>
         <div className="section" ref={section2Ref} id="about">
