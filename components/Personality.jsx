@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/components/Personality.module.css";
 import HoverVideoPlayer from "react-hover-video-player";
+import Image from "next/image";
 
 const Personality = () => {
   return (
@@ -9,9 +10,11 @@ const Personality = () => {
         <HoverVideoPlayer
           videoSrc="/vid/test.mp4"
           pausedOverlay={
-            <img
+            <Image
               src="/vid/thumbnail/test.jpg"
               alt=""
+              width="135px"
+              height="240px"
               style={{
                 // Make the image expand to cover the video's dimensions
                 width: "100%",
@@ -31,9 +34,11 @@ const Personality = () => {
         <HoverVideoPlayer
           videoSrc="/vid/paddleboarding.mp4"
           pausedOverlay={
-            <img
+            <Image
               src="/vid/thumbnail/paddleboarding.jpg"
               alt=""
+              width="135px"
+              height="240px"
               style={{
                 // Make the image expand to cover the video's dimensions
                 width: "100%",
@@ -53,9 +58,11 @@ const Personality = () => {
         <HoverVideoPlayer
           videoSrc="/vid/walkWithAhri.mp4"
           pausedOverlay={
-            <img
+            <Image
               src="/vid/thumbnail/walkWithAhri.jpg"
               alt=""
+              width="135px"
+              height="240px"
               style={{
                 // Make the image expand to cover the video's dimensions
                 width: "100%",
@@ -75,9 +82,11 @@ const Personality = () => {
         <HoverVideoPlayer
           videoSrc="/vid/antelopeCanyon.mp4"
           pausedOverlay={
-            <img
+            <Image
               src="/vid/thumbnail/antelopeCanyon.jpg"
               alt=""
+              width="135px"
+              height="240px"
               style={{
                 // Make the image expand to cover the video's dimensions
                 width: "100%",
@@ -97,9 +106,11 @@ const Personality = () => {
         <HoverVideoPlayer
           videoSrc="/vid/snowyRoad.mp4"
           pausedOverlay={
-            <img
+            <Image
               src="/vid/thumbnail/snowyRoad.jpg"
               alt=""
+              width="135px"
+              height="240px"
               style={{
                 // Make the image expand to cover the video's dimensions
                 width: "100%",
