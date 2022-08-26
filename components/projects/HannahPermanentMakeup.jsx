@@ -12,7 +12,12 @@ const HannahPermanentMakeup = ({ onComment }) => {
         <div className="boxHeader">
           <div className="boxFlex">
             <div className="boxHeaderImg">
-              <Image src="/logos/react.png" alt="" width="36px" height="36px" />
+              <Image
+                src="/logos/nextjs.png"
+                alt=""
+                width="36px"
+                height="36px"
+              />
             </div>
             <div className="boxHeaderTitle">
               <div className="boxPrimary">Hannah Permanent Makeup</div>
