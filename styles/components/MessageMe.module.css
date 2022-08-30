@@ -7,6 +7,7 @@
     left: 10000px;
     border-radius: 1rem;
     overflow: hidden;
+    z-index: 999;
 }
 
 .header {
@@ -41,7 +42,7 @@
     opacity: 1;
     height: 560px;
     transition: height 0.2s, opacity 0.2s linear;
-  }
+}
 .hide {
     visibility: hidden;
     opacity: 0;
@@ -82,4 +83,25 @@
     border-radius: 2rem;
     width: 100%;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+    .show {
+        height: calc(100vh - 100px);
+    }
+    .submitBtn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 1rem;
+        background-color: var(--color-link);
+        color: #fff;
+        padding: 1rem 0;
+        border-radius: 2rem;
+        width: calc(100vw - 2rem);
+        cursor: pointer;
+    }
 }

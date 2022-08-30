@@ -109,6 +109,7 @@ a {
   opacity: 0;
   width: 0;
   height: 0;
+  padding: 0;
 }
 
 /* general post */
@@ -157,6 +158,43 @@ a {
   background-color: var(--color-box);
   margin: 1rem 0;
 }
+
+
+/* next.js imagelayout  ===================== */
+/* imageContainer is for the project images */
+.imageContainer {
+  width: 100%;
+}
+@media only screen and (min-width: 720px) {
+  .imageContainer {
+    width: 50%;
+  }
+}
+.imageContainer > span {
+  position: unset !important;
+}
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+/* ========================================== */
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.email:hover {
+  color: rgb(63,94,251);
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 .picture {
   background-color: var(--color-post);

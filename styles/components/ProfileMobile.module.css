@@ -29,7 +29,7 @@
 }
 
 .intro {
-    padding-left: 4rem;
+    text-align: center;
 }
 
 .contact {
@@ -96,6 +96,14 @@
 
     .intro {
         padding-left: 1rem;
+    }
+
+    .contactCard {
+        flex-direction: column;
+    }
+
+    .interests {
+        justify-content: center;
     }
   }
 

@@ -10,11 +10,13 @@
     padding: 0 2rem;
 }
 
-.icons {
-    display: flex;
-}
 
-.icon {
-    width: 3rem;
-    height: 3rem;
-}
+@media only screen and (max-width: 425px) {
+    .logo {
+      display: none;
+    }
+
+    .container {
+        justify-content: center;
+    }
+  }

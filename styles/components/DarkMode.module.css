@@ -1,14 +1,10 @@
-.container {
-    display: flex;
-    align-items: center;
-}
 
 .sun,
 .moon {
+    margin-top: 0.2rem;
     width: 30px;
     height: 30px;
     cursor: pointer;
-    margin-top: 0.5rem;
     color: var(--color-navIcon);
     border-radius: 3rem;
 }

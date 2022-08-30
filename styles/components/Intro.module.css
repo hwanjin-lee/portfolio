@@ -22,6 +22,13 @@
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 720px) {
+  .contents {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .content {
     display: flex;
     align-items: center;

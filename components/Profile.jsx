@@ -4,6 +4,7 @@ import styles from "../styles/components/Profile.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import ContactLinks from "./ContactLinks";
+import { mailTo } from "./tools/MailTo";
 
 const Profile = () => {
   return (
@@ -17,8 +18,15 @@ const Profile = () => {
           <div className={styles.info}>
             <div className={styles.name}>Hwanjin Lee</div>
             <div className={styles.secondary}>
-              <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
-              <div>hwanjin.lee174@gmail.com</div>
+              <div
+                className="email"
+                onClick={() => {
+                  mailTo("hwanjin.lee174@gmail.com");
+                }}
+              >
+                <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
+                <div>hwanjin.lee174@gmail.com</div>
+              </div>
             </div>
             <div className={styles.secondary}>
               <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />

@@ -7,7 +7,7 @@ import DarkMode from "./DarkMode";
 const NavBar = ({ onToggle, darkTheme, navHeader }) => {
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.logo}>
         <Image src="/img/logo.png" alt="" width="40px" height="40px" />
       </div>
       <ScrollHighlightNabbar navHeader={navHeader} />

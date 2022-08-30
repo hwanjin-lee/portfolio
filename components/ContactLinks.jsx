@@ -31,7 +31,7 @@ const ContactLinks = () => {
       <a
         className={styles.links}
         onClick={() => {
-          mailTo("no-reply@example.com");
+          mailTo("hwanjin.lee174@gmail.com");
         }}
       >
         <FontAwesomeIcon icon={faEnvelope} className={styles.icons} />

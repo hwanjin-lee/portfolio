@@ -12,6 +12,7 @@ const HannahPermanentMakeup = ({ onComment }) => {
         <div className="boxHeader">
           <div className="boxFlex">
             <div className="boxHeaderImg">
+              {/* Input the Image here */}
               <Image
                 src="/logos/nextjs.png"
                 alt=""
@@ -20,7 +21,9 @@ const HannahPermanentMakeup = ({ onComment }) => {
               />
             </div>
             <div className="boxHeaderTitle">
-              <div className="boxPrimary">Hannah Permanent Makeup</div>
+              <div className="boxPrimary">
+                Hannah Permanent Makeup Business website
+              </div>
               <div className="boxSecondary">
                 Project: Full Stack server side web application
               </div>
@@ -33,66 +36,45 @@ const HannahPermanentMakeup = ({ onComment }) => {
       </div>
       <div className="descPadding">
         <div>
-          This full stack project was created with small business owner in mind
-          and wanted to take on a challenge to make a web application where the
-          owner can edit and manage customers database and scheduling easily
-          with admin dashboard.
+          This is my client database management service business study. I wanted
+          to understand more about database and API. With next.js, mongoBD and
+          Postman , I was eaily able to set up a website where a business owner
+          could easily change service products, store detail and have database
+          of clients and their history all stored onto a server.
         </div>
         <div>
-          <ul>
-            <li>
-              Services, store contacts, and opening hours are editable and gets
-              updated through cloud database.
-            </li>
-            <li>
-              All customer details are easily searchable with past history and
-              can be sorted for upcoming appointments.
-            </li>
-            <li>
-              Weekly schedule is shown with color code based off of service
-              types and client info.
-            </li>
-            <li>
-              Fully responsive Design for Desktop, tablet, and cell for seemless
-              user experience.
-            </li>
-          </ul>
+          This project is currently ongoing, and my next plan is to have guests
+          make appointments with paypal integration and have the information
+          added to the database and the schedule, and auth login for admin.
         </div>
       </div>
       <div className="boxPicture">
-        <div className="picture">
+        <div className="imageContainer">
           <Image
             src="/img/projects/HannahPermanentMakeUp/screenshot1.png"
-            alt=""
-            width="340px"
-            height="340px"
+            layout="fill"
+            className="image"
           />
         </div>
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
             src="/img/projects/HannahPermanentMakeUp/screenshot2.png"
-            alt=""
-            width="340px"
-            height="340px"
+            layout="fill"
+            className="image"
           />
         </div>
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
             src="/img/projects/HannahPermanentMakeUp/screenshot3.png"
-            alt=""
-            width="340px"
-            height="340px"
+            layout="fill"
+            className="image"
           />
         </div>
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
             src="/img/projects/HannahPermanentMakeUp/screenshot4.png"
-            alt=""
-            width="340px"
-            height="340px"
+            layout="fill"
+            className="image"
           />
         </div>
       </div>
@@ -102,9 +84,10 @@ const HannahPermanentMakeup = ({ onComment }) => {
           <UsedStacks title={"html"} />
           <UsedStacks title={"css"} />
           <UsedStacks title={"javascript"} />
+          <UsedStacks title={"react.js"} />
           <UsedStacks title={"next.js"} />
-          <UsedStacks title={"node.js"} />
           <UsedStacks title={"mongoDB"} />
+          <UsedStacks title={"postman"} />
         </div>
       </div>
       <div className="footerPadding">

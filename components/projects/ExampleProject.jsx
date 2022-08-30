@@ -40,46 +40,38 @@ const ExampleProject = ({ onComment }) => {
         </div>
       </div>
       <div className="boxPicture">
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
             src="/img/projects/example/exampleScreenshot1.png"
-            alt=""
-            width="340px"
-            height="340px"
+            layout="fill"
+            className="image"
           />
         </div>
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
             src="/img/projects/example/exampleScreenshot2.png"
-            alt=""
-            width="340px"
-            height="340px"
+            layout="fill"
+            className="image"
           />
         </div>
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
             src="/img/projects/example/exampleScreenshot3.png"
-            alt=""
-            width="340px"
-            height="340px"
+            layout="fill"
+            className="image"
           />
         </div>
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
             src="/img/projects/example/exampleScreenshot4.png"
-            alt=""
-            width="340px"
-            height="340px"
+            layout="fill"
+            className="image"
           />
         </div>
       </div>
       <div className="descPadding">
         <hr />
-        <div className="flex">
+        <div className="flexWrap">
           <UsedStacks title={"html"} />
           <UsedStacks title={"css"} />
           <UsedStacks title={"javascript"} />
