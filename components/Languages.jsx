@@ -115,7 +115,7 @@ const Languages = () => {
           <div className={styles.stackContainer}>
             <div className="flex">
               <Image
-                src="/logos/mongoDB.png"
+                src="/logos/mongodb.png"
                 width="20px"
                 height="20px"
                 alt="mongodb"

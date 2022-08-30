@@ -8,7 +8,7 @@ const Experiences = ({ onComment }) => {
     <div>
       <VisualEffects onComment={onComment} />
       <NextjsProject onComment={onComment} />
-      <ExampleProject onComment={onComment} />
+      {/* <ExampleProject onComment={onComment} /> */}
     </div>
   );
 };
