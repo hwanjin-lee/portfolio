@@ -51,28 +51,28 @@ const HannahPermanentMakeup = ({ onComment }) => {
       <div className="boxPicture">
         <div className="imageContainer">
           <Image
-            src="/img/projects/HannahPermanentMakeUp/screenshot1.png"
+            src="/img/projects/hannahPermanentMakeup/screenshot1.png"
             layout="fill"
             className="image"
           />
         </div>
         <div className="imageContainer">
           <Image
-            src="/img/projects/HannahPermanentMakeUp/screenshot2.png"
+            src="/img/projects/hannahPermanentMakeup/screenshot2.png"
             layout="fill"
             className="image"
           />
         </div>
         <div className="imageContainer">
           <Image
-            src="/img/projects/HannahPermanentMakeUp/screenshot3.png"
+            src="/img/projects/hannahPermanentMakeup/screenshot3.png"
             layout="fill"
             className="image"
           />
         </div>
         <div className="imageContainer">
           <Image
-            src="/img/projects/HannahPermanentMakeUp/screenshot4.png"
+            src="/img/projects/hannahPermanentMakeup/screenshot4.png"
             layout="fill"
             className="image"
           />
