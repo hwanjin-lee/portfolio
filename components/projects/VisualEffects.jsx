@@ -21,10 +21,8 @@ const VisualEffects = ({ onComment }) => {
               />
             </div>
             <div className="boxHeaderTitle">
-              <div className="boxPrimary">Past Visual Effects jobs</div>
-              <div className="boxSecondary">
-                Project: short project description
-              </div>
+              <div className="boxPrimary">Past jobs</div>
+              <div className="boxSecondary">3D visual effects experiences</div>
             </div>
           </div>
           <div>
@@ -34,55 +32,69 @@ const VisualEffects = ({ onComment }) => {
       </div>
       <div className="descPadding">
         <div>
-          Here are some of the projects I was worked on of during my time with
-          visual effects
+          Here are some of the jobs I&apos;ve done as visual effects artists in
+          the past. It&apos;s not related to programming but I thought it would
+          be interesting to share some other type of creative jobs I&apos;ve
+          done in the past. It was amazing experience working with other
+          creative and passionate individuals collaborating the skills into big
+          projects.
         </div>
       </div>
       <div className="boxPicture">
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
-            src="/img/projects/example/exampleScreenshot1.png"
-            alt=""
-            width="340px"
-            height="340px"
+            src="/img/projects/visualEffects/conceptart.png"
+            layout="fill"
+            className="image"
           />
         </div>
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
-            src="/img/projects/example/exampleScreenshot2.png"
-            alt=""
-            width="340px"
-            height="340px"
+            src="/img/projects/visualEffects/3dart.png"
+            layout="fill"
+            className="image"
           />
         </div>
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
-            src="/img/projects/example/exampleScreenshot3.png"
-            alt=""
-            width="340px"
-            height="340px"
+            src="/img/projects/visualEffects/intersect1.png"
+            layout="fill"
+            className="image"
           />
         </div>
-        <div className="picture">
-          {" "}
+        <div className="imageContainer">
           <Image
-            src="/img/projects/example/exampleScreenshot4.png"
-            alt=""
-            width="340px"
-            height="340px"
+            src="/img/projects/visualEffects/intersect2.png"
+            layout="fill"
+            className="image"
+          />
+        </div>
+        <div className="imageContainer">
+          <Image
+            src="/img/projects/visualEffects/intersect3.png"
+            layout="fill"
+            className="image"
+          />
+        </div>
+        <div className="imageContainer">
+          <Image
+            src="/img/projects/visualEffects/intersect4.png"
+            layout="fill"
+            className="image"
           />
         </div>
       </div>
       <div className="descPadding">
         <hr />
-        <div className="flex">
+        <div className="flexWrap">
           <UsedStacks title={"blender"} />
           <UsedStacks title={"photoshop"} />
           <UsedStacks title={"aftereffects"} />
-          <UsedStacks title={"substancepainter"} />
+          <UsedStacks title={"3Dsculpting"} />
+          <UsedStacks title={"texturing"} />
+          <UsedStacks title={"rigging"} />
+          <UsedStacks title={"animating"} />
+          <UsedStacks title={"rendering"} />
         </div>
       </div>
       <div className="footerPadding">

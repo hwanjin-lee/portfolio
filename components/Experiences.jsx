@@ -7,7 +7,7 @@ const Experiences = ({ onComment }) => {
   return (
     <div>
       <HannahPermanentMakeup onComment={onComment} />
-      {/* <VisualEffects onComment={onComment} /> */}
+      <VisualEffects onComment={onComment} />
       <ExampleProject onComment={onComment} />
     </div>
   );
