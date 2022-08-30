@@ -1,14 +1,14 @@
 import React from "react";
 import ExampleProject from "./projects/ExampleProject";
-import HannahPermanentMakeup from "./projects/HannahPermanentMakeup";
+import NextjsProject from "./projects/NextjsProject";
 import VisualEffects from "./projects/VisualEffects";
 
 const Experiences = ({ onComment }) => {
   return (
     <div>
-      <HannahPermanentMakeup onComment={onComment} />
       <VisualEffects onComment={onComment} />
-      {/* <ExampleProject onComment={onComment} /> */}
+      <NextjsProject onComment={onComment} />
+      <ExampleProject onComment={onComment} />
     </div>
   );
 };

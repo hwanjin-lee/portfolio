@@ -4,7 +4,7 @@ import Likes from "../reusable/Likes";
 import Ellipsis from "../tools/Ellipsis";
 import Image from "next/image";
 
-const HannahPermanentMakeup = ({ onComment }) => {
+const NextjsProject = ({ onComment }) => {
   return (
     <div className="boxManualPadding">
       <div id="work"></div>
@@ -38,7 +38,7 @@ const HannahPermanentMakeup = ({ onComment }) => {
         <div>
           This is my client database management service business study. I wanted
           to understand more about database and API. With next.js, mongoBD and
-          Postman , I was eaily able to set up a website where a business owner
+          Postman, I was eaily able to set up a website where a business owner
           could easily change service products, store detail and have database
           of clients and their history all stored onto a server.
         </div>
@@ -51,28 +51,28 @@ const HannahPermanentMakeup = ({ onComment }) => {
       <div className="boxPicture">
         <div className="imageContainer">
           <Image
-            src="/img/projects/hannahPermanentMakeup/hpmScreenshot1.png"
+            src="/img/projects/nextjsProject/hpmScreenshot1.png"
             layout="fill"
             className="image"
           />
         </div>
         <div className="imageContainer">
           <Image
-            src="/img/projects/hannahPermanentMakeup/hpmScreenshot2.png"
+            src="/img/projects/nextjsProject/hpmScreenshot2.png"
             layout="fill"
             className="image"
           />
         </div>
         <div className="imageContainer">
           <Image
-            src="/img/projects/hannahPermanentMakeup/hpmScreenshot3.png"
+            src="/img/projects/nextjsProject/hpmScreenshot3.png"
             layout="fill"
             className="image"
           />
         </div>
         <div className="imageContainer">
           <Image
-            src="/img/projects/hannahPermanentMakeup/hpmScreenshot4.png"
+            src="/img/projects/nextjsProject/hpmScreenshot4.png"
             layout="fill"
             className="image"
           />
@@ -97,4 +97,4 @@ const HannahPermanentMakeup = ({ onComment }) => {
   );
 };
 
-export default HannahPermanentMakeup;
+export default NextjsProject;
