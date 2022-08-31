@@ -23,21 +23,14 @@ const About = ({ onComment }) => {
             <Ellipsis />
           </div>
         </div>
-        {/* <div>
-          I&apos;m a software engineer specialized in front-end development with
-          background of visual graphic experiences. I got interested in coding
-          when I was doing database computer tasking through company&apos;s
-          website. It all started with a thought of how much more efficiently a
-          task could be completed with better web design and functionality.
-        </div> */}
         <div>
-          I&apos;m a front-end focused web developer with visual graphic
-          experiences. My interest in web triggered my dev journey starting from
-          being a hobby outside work but I loved it so much that it quickly
-          turned into a career transition! I think it&apos;s amazing to see how
-          fast web development tool/stack are advancing to make web more useful
-          and powerful. With libraries like React, I love to make components
-          that are useful, appealing, and easy to use.
+          I&apos;m a front-end web developer with a background in visual
+          graphics. My dev journey began when a hobby in web development grew
+          into a passion that triggered a career transition. I think it&apos;s
+          amazing to see how fast web development tools/stacks are advancing to
+          make the web more useful and powerful. Libraries like React allow me
+          to do something I love, which is to make components that are useful,
+          appealing, and easy to use!
         </div>
         <Likes onComment={onComment} />
       </div>

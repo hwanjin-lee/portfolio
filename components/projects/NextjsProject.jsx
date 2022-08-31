@@ -36,16 +36,14 @@ const NextjsProject = ({ onComment }) => {
       </div>
       <div className="descPadding">
         <div>
-          This is my client database management service business study. I wanted
-          to understand more about database and API. With next.js, mongoBD and
-          Postman, I was eaily able to set up a website where a business owner
-          could easily change service products, store detail and have database
-          of clients and their history all stored onto a server.
-        </div>
-        <div>
-          This project is currently ongoing, and my next plan is to have guests
-          make appointments with paypal integration and have the information
-          added to the database and the schedule, and auth login for admin.
+          For this project, I designed and developed a customer database website
+          for client based small businesses such as, &quot;Hannah&apos;s
+          Permanent Makeup Studio.&quot; This website allows customers to
+          schedule their own appointments for different services, which then
+          updates an appointment calendar for the admin/business owner. With
+          this website, small business owners can focus on providing in-person
+          customer care, without the hassle of setting up their schedule for
+          months to come.
         </div>
       </div>
       <div className="boxPicture">

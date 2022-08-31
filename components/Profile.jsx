@@ -33,8 +33,8 @@ const Profile = () => {
               <div>San-Diego, CA</div>
             </div>
             <div className={styles.quote}>
-              &quot;I&apos;m a developer that love to build, learn, and find new
-              opportunities to make things come to life!&quot;
+              &quot;I&apos;m a developer that loves to build, learn, and find
+              new opportunities to make things come to life!&quot;
             </div>
             <hr />
             <div className={styles.interests}>

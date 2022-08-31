@@ -25,70 +25,67 @@ const Blog = ({ onComment }) => {
           </div>
         </div>
         <div>
-          <div>
-            I grew an interest in web development from experiencing difficulty
-            while trying to look up parts in a company&apos;s overwhelming
-            database website.
-          </div>
-          <br />
-          <div>
-            My old job was an appliance technician at a contract company that
-            worked under Samsung. After diagnosis was uploaded to the server, a
-            non technician employee had to search for parts in Samsung&apos;s
-            database website for part number.
-          </div>
-          <br />
-          <div>
-            There was a moment where I had back injury from field work, so I
-            took some time off and worked in office helping out with the parts
-            research and order.
-          </div>
-          <br />
-          <div>
-            The database website&apos;s search feature had three fill in spaces:
-            Model number, Serial number, and part name. It was awful and
-            overwhelming. There was one table for all different types and models
-            of appliances plus tv.. The fill in tasking was painful as the
-            database did not filter nor given me auto finish recommendations.
-          </div>
-          <br />
-          <div>
-            Since the beginning of my time with the company, the parts research
-            and order always have bottlenecked the flow of many repair request
-            tickets and I have finally realized why. This part in the process
-            alone impacted the overall customers repair experiences due to not
-            having enough workers to order the needed parts right away, lagging
-            the logistics of part arrival. At the end, it resulted in customers
-            having to wait longer than they needed to for their fridge or
-            washing machine to be fixed.
-          </div>
-          <br />
-          <div>
-            Samsung always pushed contracted companies for a better customer
-            experience. They gave more repair tickets to companies with higher
-            customer satisfactory ratings. I knew that as a contractor company
-            under Samsung, there was nothing much we could do about their awful
-            database website but at least I knew what the problem was and
-            realized the importance of a web design.
-          </div>
-          <br />
-          <div>
-            If Samsung realize that their bad design of database parts search
-            was impacting their overall AS(after service) experiences, I&apos;m
-            pretty sure they would&apos;ve done something about it.
-          </div>
-          <br />
-          <div>
-            I always imagined, If they had a good filtering and sorting system
-            behind their database with good responsive design for mobile,
-            contractor companies wouldn&apos;t have to spend their resources on
-            educating non-certified technician employees to research for parts
-            based off of a diagnosis, getting rid of the whole bottlenecking
-            process once in for all. Parts could be ordered right there and then
-            at the field site with the customer by technician who knows more
-            about the parts. That way there would be no errors for wrong parts
-            or delay in parts delivery.
-          </div>
+          <p>
+            Have you ever come across a user interface that is so bad that it
+            makes you want to leave your job? Been there and done that but for
+            good reason! That is, so I can help improve interfaces through
+            development.
+          </p>
+          <p>
+            I grew an interest in web development after experiencing difficulty
+            while trying to look up hardware parts on an overwhelming database
+            website.
+          </p>
+          <p>
+            At my previous job, I was an appliance technician for a contract
+            company(A) under a large appliance company(B). After technicians
+            like myself uploaded a hardware system diagnosis to the server, part
+            researchers had to search the company(B)&apos;s database for
+            hardware part numbers.
+          </p>
+          <p>
+            At one point during my time as a technician, I injured my back while
+            working on the field. I temporarily switched roles within the
+            company to help support technicians as a part researcher.
+          </p>
+          <p>
+            The website's search feature was overwhelming, and the results were
+            difficult to review. There was no way to filter the database table
+            and view only by appliance types or model year. Instead, part
+            researchers had to manually search the database by typing in either
+            the model number, serial number, or part name.
+          </p>
+          <p>They had to do this for Every. Single. Diagnosis.</p>
+          <p>
+            Otherwise, they would have to view a massive table for all different
+            types of appliances and different models.
+          </p>
+          <p>
+            During my experience as a technician to a temporary parts
+            researcher, I noticed that the parts research and orders always
+            bottlenecked the flow of many repair request tickets. This was due
+            to a database that was inefficient and difficult to use which
+            ultimately resulted in lagging the logistics of part arrival time.
+            This part in the process alone impacted the overall customers&apos;
+            repair experiences, because they had to wait longer than they needed
+            to for their appliance to be fixed.
+          </p>
+          <p>
+            I believe this experience led me to start thinking more like a web
+            developer, and I began to ask myself, &quot;if I could change this,
+            what would I do differently?&quot;
+          </p>
+          <p>
+            I would focus on creating a database with a filtering and sorting
+            system to better support part researchers with finding and ordering
+            the parts they need. Part researchers would then be able to filter
+            by appliance or models, and see the results listed alphabetically.
+            This would decrease the amount of time they spend looking for one
+            part, and increase the amount of orders they are able to make in a
+            day. Thus, leading to earlier part arrival times, and happier
+            customers that don&apos;t have to wait too long for their appliances
+            to be fixed.
+          </p>
         </div>
         <Likes onComment={onComment} />
       </div>

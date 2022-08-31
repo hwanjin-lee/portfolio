@@ -20,21 +20,18 @@ const Education = ({ onComment }) => {
           <Ellipsis />
         </div>
       </div>
-      {/* <div>
-        I graduated with Graphic Arts and Design where I focused learning about
-        print, digital UI designs, color sets, and more using mostly Adobe
-        &apos;s creative cloud softwares. The school challenged me to explore
-        many different direction of career paths that I could take. I knew I
-        wanted to do something that involved creativity. That is why I have
-        transitioned my career into web development.
-      </div> */}
       <div>
-        Graduated in 2017 with Bachelors of Science. Majoring in Graphic Design,
-        the curriculum taught Adobe product focused classes. I explored general
-        ways to produce digital assets and physical products and learn how it
-        was used. I was not aware of web development back then but this is where
-        I really learned that I wanted to explore into career that involved
-        creativity.
+        In 2017, I graduated with a Bachelors of Science in Graphic Information
+        Technology. During my time at Arizona State University, I explored
+        general ways to produce and effectively use digital assets and physical
+        products. To create these assets, I mainly used Adobe software.
+      </div>
+      <br />
+      <div>
+        During this stage of my life, I did not know much about web development.
+        However, it became clear to me that I wanted to pursue a career that
+        allowed me to be creative. Now, I hope to use that creativity as a web
+        developer.
       </div>
       <Likes onComment={onComment} />
     </div>

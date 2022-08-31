@@ -84,7 +84,7 @@
     height: 28px;
 }
 .interestBox:hover {
-    background-color: var(--color-navIcon);
+    background-color: var(--color-interest);
     margin: 0 .2rem .4rem;
 }
 

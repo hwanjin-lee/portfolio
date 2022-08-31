@@ -6,8 +6,8 @@ import VisualEffects from "./projects/VisualEffects";
 const Experiences = ({ onComment }) => {
   return (
     <div>
-      <VisualEffects onComment={onComment} />
       <NextjsProject onComment={onComment} />
+      <VisualEffects onComment={onComment} />
       {/* <ExampleProject onComment={onComment} /> */}
     </div>
   );

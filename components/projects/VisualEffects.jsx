@@ -32,12 +32,8 @@ const VisualEffects = ({ onComment }) => {
       </div>
       <div className="descPadding">
         <div>
-          Here are some of the jobs I&apos;ve done as visual effects artists in
-          the past. It&apos;s not related to programming but I thought it would
-          be interesting to share some other type of creative jobs I&apos;ve
-          done in the past. It was amazing experience working with other
-          creative and passionate individuals collaborating the skills into big
-          projects.
+          Here are a few of my past creative projects where I had the
+          opportunity to collaborate with other creatives.
         </div>
       </div>
       <div className="boxPicture">
