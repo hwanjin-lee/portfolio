@@ -49,9 +49,9 @@ const Blog = ({ onComment }) => {
             company to help support technicians as a part researcher.
           </p>
           <p>
-            The website's search feature was overwhelming, and the results were
-            difficult to review. There was no way to filter the database table
-            and view only by appliance types or model year. Instead, part
+            The website&apos;s search feature was overwhelming, and the results
+            were difficult to review. There was no way to filter the database
+            table and view only by appliance types or model year. Instead, part
             researchers had to manually search the database by typing in either
             the model number, serial number, or part name.
           </p>
