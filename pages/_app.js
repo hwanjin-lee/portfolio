@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
   //===========================================================================================
   const [darkTheme, setDarkTheme] = useState(undefined);
   const [minimizedState, setMinimizedState] = useState(0);
+  const [fullPicture, setFullPicture] = useState(0);
 
   const handleToggle = (event) => {
     setDarkTheme(event.target.checked);
@@ -73,6 +74,8 @@ function MyApp({ Component, pageProps }) {
       navHeader={navHeader} 
       minimizedState={minimizedState} 
       setMinimizedState={setMinimizedState}
+      fullPicture={fullPicture}
+      setFullPicture={setFullPicture}
       >
       <Component 
         {...pageProps} 

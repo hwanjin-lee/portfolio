@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import UsedStacks from "../reusable/UsedStacks";
 import Likes from "../reusable/Likes";
 import Ellipsis from "../tools/Ellipsis";
 import Image from "next/image";
+import { styleOfFullPicture } from "../tools/seeMore";
 
 const NextjsProject = ({ onComment }) => {
+  const [src, setSrc] = useState("/img/projects/example/default.png");
+  const [fullPicture, setFullPicture] = useState(0);
+
+  const handleSrc = (newSrc) => {
+    setSrc((src = newSrc));
+    if (fullPicture == 0) {
+      setFullPicture((fullPicture += 1));
+    } else if (fullPicture == 1) {
+      setFullPicture((fullPicture -= 1));
+    }
+  };
+
+  const pictures = [
+    "/img/projects/nextjsProject/hpmScreenshot1.png",
+    "/img/projects/nextjsProject/hpmScreenshot2.png",
+    "/img/projects/nextjsProject/hpmScreenshot3.png",
+    "/img/projects/nextjsProject/hpmScreenshot4.png",
+  ];
+
   return (
     <div className="boxManualPadding">
       <div id="work"></div>
@@ -46,34 +66,24 @@ const NextjsProject = ({ onComment }) => {
           months to come.
         </div>
       </div>
+      <div
+        className={styleOfFullPicture(fullPicture)}
+        onClick={() => handleSrc("/img/projects/example/default.png")}
+      >
+        <Image src={`${src}`} layout="fill" className="fullPictureImage" />
+      </div>
       <div className="boxPicture">
-        <div className="imageContainer">
-          <Image
-            src="/img/projects/nextjsProject/hpmScreenshot1.png"
-            layout="fill"
-            className="image"
-          />
+        <div className="imageContainer" onClick={() => handleSrc(pictures[0])}>
+          <Image src={pictures[0]} layout="fill" className="image" />
         </div>
-        <div className="imageContainer">
-          <Image
-            src="/img/projects/nextjsProject/hpmScreenshot2.png"
-            layout="fill"
-            className="image"
-          />
+        <div className="imageContainer" onClick={() => handleSrc(pictures[1])}>
+          <Image src={pictures[1]} layout="fill" className="image" />
         </div>
-        <div className="imageContainer">
-          <Image
-            src="/img/projects/nextjsProject/hpmScreenshot3.png"
-            layout="fill"
-            className="image"
-          />
+        <div className="imageContainer" onClick={() => handleSrc(pictures[2])}>
+          <Image src={pictures[2]} layout="fill" className="image" />
         </div>
-        <div className="imageContainer">
-          <Image
-            src="/img/projects/nextjsProject/hpmScreenshot4.png"
-            layout="fill"
-            className="image"
-          />
+        <div className="imageContainer" onClick={() => handleSrc(pictures[3])}>
+          <Image src={pictures[3]} layout="fill" className="image" />
         </div>
       </div>
       <div className="descPadding">

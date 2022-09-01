@@ -164,6 +164,7 @@ a {
 /* imageContainer is for the project images */
 .imageContainer {
   width: 100%;
+  cursor: pointer;
 }
 @media only screen and (min-width: 720px) {
   .imageContainer {
@@ -292,4 +293,39 @@ a:active {
 
 a:hover {
   color: var(--color-link);
+}
+
+
+
+
+
+.fullPictureImage {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+  display: none;
+}
+
+.fullPictureHide {
+  display: none;
+}
+
+.fullPictureShow {
+  position: absolute;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  width: 700px;
+  z-index: 10;
+}
+
+.fullPictureHide > span,
+.fullPictureShow > span {
+  position: unset !important;
+}
+
+@media only screen and (max-width: 720px) {
+  .fullPictureShow {
+    display: none;
+  }
 }

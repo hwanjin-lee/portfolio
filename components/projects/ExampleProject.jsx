@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import UsedStacks from "../reusable/UsedStacks";
 import Likes from "../reusable/Likes";
 import Ellipsis from "../tools/Ellipsis";
 import Image from "next/image";
+import { styleOfFullPicture } from "../tools/seeMore";
 
 const ExampleProject = ({ onComment }) => {
+  const [src, setSrc] = useState("/img/projects/example/default.png");
+  const [fullPicture, setFullPicture] = useState(0);
+
+  const handleSrc = (newSrc) => {
+    setSrc((src = newSrc));
+    if (fullPicture == 0) {
+      setFullPicture((fullPicture += 1));
+    } else if (fullPicture == 1) {
+      setFullPicture((fullPicture -= 1));
+    }
+  };
+
+  const pictures = [
+    "/img/projects/example/exampleScreenshot1.png",
+    "/img/projects/example/exampleScreenshot2.png",
+    "/img/projects/example/exampleScreenshot3.png",
+    "/img/projects/example/exampleScreenshot4.png",
+  ];
+
   return (
     <div className="boxManualPadding">
       <div id="work"></div>
@@ -12,7 +32,6 @@ const ExampleProject = ({ onComment }) => {
         <div className="boxHeader">
           <div className="boxFlex">
             <div className="boxHeaderImg">
-              {/* Input the Image here */}
               <Image
                 src="/logos/javascript.png"
                 alt=""
@@ -39,34 +58,24 @@ const ExampleProject = ({ onComment }) => {
           deleniti dicta aut ut eaque!
         </div>
       </div>
+      <div
+        className={styleOfFullPicture(fullPicture)}
+        onClick={() => handleSrc("/img/projects/example/default.png")}
+      >
+        <Image src={`${src}`} layout="fill" className="fullPictureImage" />
+      </div>
       <div className="boxPicture">
-        <div className="imageContainer">
-          <Image
-            src="/img/projects/example/exampleScreenshot1.png"
-            layout="fill"
-            className="image"
-          />
+        <div className="imageContainer" onClick={() => handleSrc(pictures[0])}>
+          <Image src={pictures[0]} layout="fill" className="image" />
         </div>
-        <div className="imageContainer">
-          <Image
-            src="/img/projects/example/exampleScreenshot2.png"
-            layout="fill"
-            className="image"
-          />
+        <div className="imageContainer" onClick={() => handleSrc(pictures[1])}>
+          <Image src={pictures[1]} layout="fill" className="image" />
         </div>
-        <div className="imageContainer">
-          <Image
-            src="/img/projects/example/exampleScreenshot3.png"
-            layout="fill"
-            className="image"
-          />
+        <div className="imageContainer" onClick={() => handleSrc(pictures[2])}>
+          <Image src={pictures[2]} layout="fill" className="image" />
         </div>
-        <div className="imageContainer">
-          <Image
-            src="/img/projects/example/exampleScreenshot4.png"
-            layout="fill"
-            className="image"
-          />
+        <div className="imageContainer" onClick={() => handleSrc(pictures[3])}>
+          <Image src={pictures[3]} layout="fill" className="image" />
         </div>
       </div>
       <div className="descPadding">
