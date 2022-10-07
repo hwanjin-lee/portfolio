@@ -154,9 +154,10 @@ a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 1rem 0;
-  background-color: var(--color-box);
-  margin: 1rem 0;
+  padding: 0.25rem;
+  /* background-color: var(--color-box); */
+  background-color: #000;
+  margin: 0.5rem;
 }
 
 
@@ -165,6 +166,8 @@ a {
 .imageContainer {
   width: 100%;
   cursor: pointer;
+  padding: 0.25rem;
+  background-color: #000;
 }
 @media only screen and (min-width: 720px) {
   .imageContainer {
@@ -313,8 +316,7 @@ a:hover {
 
 .fullPictureShow {
   position: absolute;
-  padding: 1rem 0;
-  margin: 1rem 0;
+  padding: 1rem;
   width: 700px;
   z-index: 10;
 }
@@ -328,4 +330,10 @@ a:hover {
   .fullPictureShow {
     display: none;
   }
+}
+
+.video {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #000;
 }

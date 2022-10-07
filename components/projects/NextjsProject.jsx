@@ -19,10 +19,10 @@ const NextjsProject = ({ onComment }) => {
   };
 
   const pictures = [
-    "/img/projects/nextjsProject/hpmScreenshot1.png",
-    "/img/projects/nextjsProject/hpmScreenshot2.png",
-    "/img/projects/nextjsProject/hpmScreenshot3.png",
-    "/img/projects/nextjsProject/hpmScreenshot4.png",
+    "/img/projects/nextjsProject/photo1.png",
+    "/img/projects/nextjsProject/photo2.png",
+    "/img/projects/nextjsProject/photo3.png",
+    "/img/projects/nextjsProject/photo4.png",
   ];
 
   return (
@@ -85,6 +85,14 @@ const NextjsProject = ({ onComment }) => {
         <div className="imageContainer" onClick={() => handleSrc(pictures[3])}>
           <Image src={pictures[3]} layout="fill" className="image" />
         </div>
+      </div>
+      <div className="video">
+        <video width="680" controls>
+          <source
+            src="/img/projects/nextjsProject/nextjsprojectvid.mp4"
+            type="video/mp4"
+          ></source>
+        </video>
       </div>
       <div className="descPadding">
         <hr />

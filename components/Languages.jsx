@@ -50,7 +50,7 @@ const Languages = () => {
             <div className="spaceLeft">TypeScript</div>
           </div>
         </div>
-        <div className={styles.title}>Stack / Libraries</div>
+        <div className={styles.title}>Libraries / Tools</div>
         <hr />
         <div className={styles.stackContainer}>
           <div className="flex">
@@ -74,7 +74,7 @@ const Languages = () => {
             <div className="spaceLeft">Next.js</div>
           </div>
         </div>
-        <div className={styles.stackContainer}>
+        {/* <div className={styles.stackContainer}>
           <div className="flex">
             <Image
               src="/logos/angular.png"
@@ -84,7 +84,7 @@ const Languages = () => {
             />
             <div className="spaceLeft">Angular</div>
           </div>
-        </div>
+        </div> */}
         <div className={styleSeeMore(display, styles.show, styles.hide)}>
           <div className={styles.stackContainer}>
             <div className="flex">
