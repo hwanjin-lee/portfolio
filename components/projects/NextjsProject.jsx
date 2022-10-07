@@ -86,7 +86,7 @@ const NextjsProject = ({ onComment }) => {
           <Image src={pictures[3]} layout="fill" className="image" />
         </div>
       </div>
-      <div className="video">
+      <div className="videoplayer">
         <video width="680" controls>
           <source
             src="/img/projects/nextjsProject/nextjsprojectvid.mp4"
