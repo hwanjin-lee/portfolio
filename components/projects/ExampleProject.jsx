@@ -66,16 +66,16 @@ const ExampleProject = ({ onComment }) => {
       </div>
       <div className="boxPicture">
         <div className="imageContainer" onClick={() => handleSrc(pictures[0])}>
-          <Image src={pictures[0]} layout="fill" className="image" />
+          <Image src={pictures[0]} alt="" layout="fill" className="image" />
         </div>
         <div className="imageContainer" onClick={() => handleSrc(pictures[1])}>
-          <Image src={pictures[1]} layout="fill" className="image" />
+          <Image src={pictures[1]} alt="" layout="fill" className="image" />
         </div>
         <div className="imageContainer" onClick={() => handleSrc(pictures[2])}>
-          <Image src={pictures[2]} layout="fill" className="image" />
+          <Image src={pictures[2]} alt="" layout="fill" className="image" />
         </div>
         <div className="imageContainer" onClick={() => handleSrc(pictures[3])}>
-          <Image src={pictures[3]} layout="fill" className="image" />
+          <Image src={pictures[3]} alt="" layout="fill" className="image" />
         </div>
       </div>
       <div className="descPadding">
