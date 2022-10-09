@@ -10,6 +10,10 @@
     padding: 0 2rem;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 
 @media only screen and (max-width: 425px) {
     .logo {
