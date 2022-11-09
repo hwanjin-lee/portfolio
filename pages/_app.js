@@ -6,8 +6,8 @@ import { handleSeeMore } from '../components/tools/seeMore';
 function MyApp({ Component, pageProps }) {
   //===========================================================================================
   const [darkTheme, setDarkTheme] = useState(undefined);
-  const [minimizedState, setMinimizedState] = useState(0);
-  const [fullPicture, setFullPicture] = useState(0);
+  const [minimizedState, setMinimizedState] = useState(false);
+  const [fullPicture, setFullPicture] = useState(false);
 
   const handleToggle = (event) => {
     setDarkTheme(event.target.checked);

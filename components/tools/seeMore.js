@@ -1,26 +1,26 @@
 export const handleSeeMore = (state, setState) => {
-    state == 0 ? setState((state += 1)) : setState((state -= 1));
+    state ===  false ? setState(true) : setState(false);
   };
 
 export const styleSeeMore = (state, showingStyle, hidingStyle) => {
-    if(state == 0){
+    if(state === false){
         return hidingStyle;
-    } else if(state == 1){
+    } else if(state === true){
         return showingStyle;
     }
 };
 export const textSeeMore = (state) => {
-    if (state == 0){
+    if (state ===  false){
         return "See more";
-    } else if(state == 1){
+    } else if(state === true){
         return "See less"
     }
 };
 
 export const styleOfFullPicture = (state) => {
-    if (state == 0){
+    if (state === false){
         return "fullPictureHide";
-    } else if(state == 1){
+    } else if(state ===  true){
         return "fullPictureShow";
     }
 }

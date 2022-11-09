@@ -7,22 +7,22 @@ import { styleOfFullPicture } from "../tools/seeMore";
 
 const NextjsProject = ({ onComment }) => {
   const [src, setSrc] = useState("/img/projects/example/default.png");
-  const [fullPicture, setFullPicture] = useState(0);
+  const [fullPicture, setFullPicture] = useState(false);
 
   const handleSrc = (newSrc) => {
     setSrc((src = newSrc));
-    if (fullPicture == 0) {
-      setFullPicture((fullPicture += 1));
-    } else if (fullPicture == 1) {
-      setFullPicture((fullPicture -= 1));
+    if (fullPicture === false) {
+      setFullPicture(true);
+    } else if (fullPicture === true) {
+      setFullPicture(false);
     }
   };
 
   const pictures = [
-    "/img/projects/nextjsProject/photo1.png",
-    "/img/projects/nextjsProject/photo2.png",
-    "/img/projects/nextjsProject/photo3.png",
-    "/img/projects/nextjsProject/photo4.png",
+    { src: "/img/projects/nextjsProject/photo1.png", alt: "" },
+    { src: "/img/projects/nextjsProject/photo2.png", alt: "" },
+    { src: "/img/projects/nextjsProject/photo3.png", alt: "" },
+    { src: "/img/projects/nextjsProject/photo4.png", alt: "" },
   ];
 
   return (
@@ -73,17 +73,60 @@ const NextjsProject = ({ onComment }) => {
         <Image src={`${src}`} layout="fill" className="fullPictureImage" />
       </div>
       <div className="boxPicture">
-        <div className="imageContainer" onClick={() => handleSrc(pictures[0])}>
-          <Image src={pictures[0]} alt="" layout="fill" className="image" />
+        {/* {pictures.map((pic) => {
+          <div className="imageContainer" onClick={() => handleSrc(pic.src)}>
+            <Image
+              src={pic.src}
+              alt={pic.alt}
+              layout="fill"
+              className="image"
+            />
+          </div>;
+        })} */}
+
+        <div
+          className="imageContainer"
+          onClick={() => handleSrc(pictures[0].src)}
+        >
+          <Image
+            src={pictures[0].src}
+            alt={pictures[0].alt}
+            layout="fill"
+            className="image"
+          />
         </div>
-        <div className="imageContainer" onClick={() => handleSrc(pictures[1])}>
-          <Image src={pictures[1]} alt="" layout="fill" className="image" />
+        <div
+          className="imageContainer"
+          onClick={() => handleSrc(pictures[1].src)}
+        >
+          <Image
+            src={pictures[1].src}
+            alt={pictures[1].alt}
+            layout="fill"
+            className="image"
+          />
         </div>
-        <div className="imageContainer" onClick={() => handleSrc(pictures[2])}>
-          <Image src={pictures[2]} alt="" layout="fill" className="image" />
+        <div
+          className="imageContainer"
+          onClick={() => handleSrc(pictures[2].src)}
+        >
+          <Image
+            src={pictures[2].src}
+            alt={pictures[2].alt}
+            layout="fill"
+            className="image"
+          />
         </div>
-        <div className="imageContainer" onClick={() => handleSrc(pictures[3])}>
-          <Image src={pictures[3]} alt="" layout="fill" className="image" />
+        <div
+          className="imageContainer"
+          onClick={() => handleSrc(pictures[3].src)}
+        >
+          <Image
+            src={pictures[3].src}
+            alt={pictures[3].alt}
+            layout="fill"
+            className="image"
+          />
         </div>
       </div>
       <div className="videoplayer">

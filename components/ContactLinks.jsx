@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/components/ContactLinks.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faSquarePhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faGithub,
@@ -23,11 +23,11 @@ const ContactLinks = () => {
           <FontAwesomeIcon icon={faGithub} className={styles.icons} />
         </a>
       </Link>
-      <Link href="https://twitter.com/lee_hwanjin">
+      {/* <Link href="https://twitter.com/lee_hwanjin">
         <a className={styles.links} target="_blank">
           <FontAwesomeIcon icon={faTwitter} className={styles.icons} />
         </a>
-      </Link>
+      </Link> */}
       <a
         className={styles.links}
         onClick={() => {
