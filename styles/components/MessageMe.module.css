@@ -90,7 +90,8 @@
         width: 100%;
     }
     .show {
-        height: calc(100vh - 100px);
+        /* height: calc(100vh - 200px); */
+        height: 35em;
     }
     .submitBtn {
         position: absolute;

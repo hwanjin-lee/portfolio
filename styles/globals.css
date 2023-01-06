@@ -19,6 +19,10 @@ body {
   scrollbar-width: none;
   scroll-padding-top: 7rem;
   line-height: 1;
+  user-select: none; /* standard */
+  -moz-user-select: none; /* firefox specific */
+  -webkit-user-select: none; /* Chrome, Opera and Safari*/
+  -ms-user-select: none; /* IE, ms-edge */
 }
 body {
   font-size: 1.6rem;
