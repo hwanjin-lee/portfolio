@@ -59,7 +59,7 @@ const NextjsProject = ({ onComment }) => {
           I recently developed a full stack web application for small
           client-based businesses, using my skills in front-end development and
           cloud database interactions to create a customer database website for
-          &quot;Hannah's Permanent Makeup Studio.&quot; My project included
+          &quot;Hannah&apos;s Permanent Makeup Studio.&quot; My project included
           designing and implementing features such as appointment scheduling and
           calendar management using technologies such as JavaScript, Next.js,
           and MongoDB Atlas. The website allows customers to easily book
