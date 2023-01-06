@@ -56,14 +56,21 @@ const NextjsProject = ({ onComment }) => {
       </div>
       <div className="descPadding">
         <div>
-          For this project, I designed and developed a customer database website
-          for client based small businesses such as, &quot;Hannah&apos;s
-          Permanent Makeup Studio.&quot; This website allows customers to
-          schedule their own appointments for different services, which then
-          updates an appointment calendar for the admin/business owner. With
-          this website, small business owners can focus on providing in-person
-          customer care, without the hassle of setting up their schedule for
-          months to come.
+          I recently developed a full stack web application for small
+          client-based businesses, using my skills in front-end development and
+          cloud database interactions to create a customer database website for
+          &quot;Hannah's Permanent Makeup Studio.&quot; My project included
+          designing and implementing features such as appointment scheduling and
+          calendar management using technologies such as JavaScript, Next.js,
+          and MongoDB Atlas. The website allows customers to easily book
+          appointments online and provides an interface for business owners to
+          make updates to store information, including pricing and operating
+          hours. For example, if the closing time is changed from 5pm to 2pm on
+          a Sunday, the website will automatically reflect this update and
+          prevent customers from booking appointments later than 2pm. This
+          project would help small business owners streamline the appointment
+          process for both the business and its customers, allowing them to
+          focus on providing exceptional in-person customer service.
         </div>
       </div>
       <div
