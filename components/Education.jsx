@@ -21,17 +21,22 @@ const Education = ({ onComment }) => {
         </div>
       </div>
       <div>
-        In 2017, I graduated with a Bachelors of Science in Graphic Information
-        Technology. During my time at Arizona State University, I explored
-        general ways to produce and effectively use digital assets and physical
-        products. To create these assets, I mainly used Adobe software.
-      </div>
-      <br />
-      <div>
-        During this stage of my life, I did not know much about web development.
-        However, it became clear to me that I wanted to pursue a career that
-        allowed me to be creative. Now, I hope to use that creativity as a web
-        developer.
+        <div>
+          I received my Bachelor of Science in Graphic Design through Graphic
+          Information Technology program from Arizona State University in 2017.
+          Throughout my studies, I focused on the production and utilization of
+          digital and physical products using Adobe software and other tools
+          like Maya for 3D digital asset studies.
+        </div>
+        <br />
+        <div>
+          While I had initially limited knowledge of software development, I
+          have always been drawn to careers that allow me to be creative. I am
+          excited to bring that creativity to my work as a developer and believe
+          that my background in design will be a valuable asset in this field. I
+          am eager to begin my career in software development and make use of my
+          skills and experience in this industry.
+        </div>
       </div>
       <Likes onComment={onComment} />
     </div>

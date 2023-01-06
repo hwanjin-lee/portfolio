@@ -14,9 +14,10 @@ const Blog = ({ onComment }) => {
               <Image src="/img/myself.jpg" alt="" width="36px" height="36px" />
             </div>
             <div className="boxHeaderTitle">
-              <div className="boxPrimary">Hwanjin Lee</div>
+              <div className="boxPrimary">Blog: Hwanjin Lee</div>
               <div className="boxSecondary">
-                Blog: What made me want to get into web development
+                How My Frustration with Inefficient Part Ordering Led Me to
+                Learning Development
               </div>
             </div>
           </div>
@@ -25,67 +26,50 @@ const Blog = ({ onComment }) => {
           </div>
         </div>
         <div>
-          <p>
-            Have you ever come across a user interface that is so bad that it
-            makes you want to leave your job? Been there and done that but for
-            good reason! That is, so I can help improve interfaces through
-            development.
-          </p>
-          <p>
-            I grew an interest in web development after experiencing difficulty
-            while trying to look up hardware parts on an overwhelming database
-            website.
-          </p>
-          <p>
-            At my previous job, I was an appliance technician for a contract
-            company(A) under a large appliance company(B). After technicians
-            like myself uploaded a hardware system diagnosis to the server, part
-            researchers had to search the company(B)&apos;s database for
-            hardware part numbers.
-          </p>
-          <p>
-            At one point during my time as a technician, I injured my back while
-            working on the field. I temporarily switched roles within the
-            company to help support technicians as a part researcher.
-          </p>
-          <p>
-            The website&apos;s search feature was overwhelming, and the results
-            were difficult to review. There was no way to filter the database
-            table and view only by appliance types or model year. Instead, part
-            researchers had to manually search the database by typing in either
-            the model number, serial number, or part name.
-          </p>
-          <p>They had to do this for Every. Single. Diagnosis.</p>
-          <p>
-            Otherwise, they would have to view a massive table for all different
-            types of appliances and different models.
-          </p>
-          <p>
-            During my experience as a technician to a temporary parts
-            researcher, I noticed that the parts research and orders always
-            bottlenecked the flow of many repair request tickets. This was due
-            to a database that was inefficient and difficult to use which
-            ultimately resulted in lagging the logistics of part arrival time.
-            This part in the process alone impacted the overall customers&apos;
-            repair experiences, because they had to wait longer than they needed
-            to for their appliance to be fixed.
-          </p>
-          <p>
-            I believe this experience led me to start thinking more like a web
-            developer, and I began to ask myself, &quot;if I could change this,
-            what would I do differently?&quot;
-          </p>
-          <p>
-            I would focus on creating a database with a filtering and sorting
-            system to better support part researchers with finding and ordering
-            the parts they need. Part researchers would then be able to filter
-            by appliance or models, and see the results listed alphabetically.
-            This would decrease the amount of time they spend looking for one
-            part, and increase the amount of orders they are able to make in a
-            day. Thus, leading to earlier part arrival times, and happier
-            customers that don&apos;t have to wait too long for their appliances
-            to be fixed.
-          </p>
+          <div>
+            As an appliance technician, I saw firsthand the difficulties that
+            arose from the current system of ordering parts for repairs at my
+            previous job. At the company I worked for, technicians would upload
+            a hardware system diagnosis to the server using an in-house app, but
+            then a separate team of part researchers would have to search the
+            appliance company&apos;s database for the corresponding part
+            numbers. This added an extra step to the repair process and often
+            resulted in delays for customers, as the team of researchers
+            struggled to navigate the overwhelming and poorly organized
+            database.
+          </div>
+          <br />
+          <div>
+            One day, I had the opportunity to switch roles within the company
+            and work as a part researcher myself. This gave me a new perspective
+            on the challenges of the job and the inefficiencies of the current
+            system. I saw that the database was difficult to use and had
+            multiple versions of the same parts, making it hard to review the
+            results. On top of that, some parts didn&apos;t even have pictures,
+            and the filter system by model number and serial number often
+            provided incorrect information. As a result, technicians often had
+            to make multiple visits to complete a repair because of wrong parts
+            being ordered.
+          </div>
+          <br />
+          <div>
+            It was clear to me that there had to be a better way. I started
+            thinking about how I could use my knowledge as a technician and my
+            desire to improve the system to develop a more efficient and
+            effective app that could connect directly to the parts database. I
+            realized that if technicians were able to access and search the
+            database themselves, it would streamline the repair process and
+            improve the overall customer experience.
+          </div>
+          <br />
+          <div>
+            And so, my interest in web development was born. I knew that I
+            wanted to create solutions that could help companies like mine run
+            more smoothly and provide better service to their customers. I
+            believe that with the right approach to development and the right
+            tools, we can make a real difference in the way businesses operate
+            and the level of satisfaction they provide.
+          </div>
         </div>
         <Likes onComment={onComment} />
       </div>

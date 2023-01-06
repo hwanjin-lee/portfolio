@@ -33,8 +33,9 @@ const Profile = () => {
               <div>San-Diego, CA</div>
             </div>
             <div className={styles.quote}>
-              &quot;I&apos;m a developer that loves to build, learn, and find
-              new opportunities to make things come to life!&quot;
+              "As a developer with a passion for building, learning, and
+              bringing ideas to life, I am always seeking new opportunities to
+              grow and make a positive impact."
             </div>
             <hr />
             <div className={styles.interests}>
