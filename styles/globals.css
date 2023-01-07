@@ -93,7 +93,12 @@ ul {
 }
 
 a {
-  text-decoration: none;;
+  text-decoration: none;
+  color: var(--color-primary-font);
+}
+
+a:visited {
+  color: var(--color-primary-font);
 }
 
 /* Global default show and hide styles */
