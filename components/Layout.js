@@ -4,8 +4,14 @@ import SideBarLeft from "./SideBarLeft";
 import SideBarRight from "./SideBarRight";
 import MessageMe from "./MessageMe";
 import styles from "../styles/Layout.module.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Layout = ({ children, onToggle, darkTheme, navHeader, minimizedState, setMinimizedState }) => {
+
+  const notifySuccess = () => toast.success("Message Sent!");
+  const notifyError = () => toast.error("Error Occured");
+
   return (
     <div className={styles.container}>
       <NavBar onToggle={onToggle} darkTheme={darkTheme} navHeader={navHeader}/>
@@ -18,7 +24,8 @@ const Layout = ({ children, onToggle, darkTheme, navHeader, minimizedState, setM
           <SideBarRight />
         </div>
       </div>
-      <MessageMe minimizedState={minimizedState} setMinimizedState={setMinimizedState}/>
+      <MessageMe minimizedState={minimizedState} setMinimizedState={setMinimizedState} notifySuccess={notifySuccess} notifyError={notifyError}/>
+      <ToastContainer />
     </div>
   );
 };
