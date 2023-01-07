@@ -30,7 +30,7 @@ const Profile = () => {
             </div>
             <div className={styles.secondary}>
               <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />
-              <div>San-Diego, CA</div>
+              <div>Phoenix, AZ</div>
             </div>
             <div className={styles.quote}>
               &quot;As a developer with a passion for building, learning, and

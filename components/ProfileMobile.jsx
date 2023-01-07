@@ -39,7 +39,7 @@ const ProfileMobile = () => {
                     icon={faLocationDot}
                     className={styles.icon}
                   />
-                  San-Diego, CA
+                  Phoenix, AZ
                 </div>
               </div>
               <div className={styles.quote}>
