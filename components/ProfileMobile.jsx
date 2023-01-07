@@ -9,8 +9,8 @@ import Resume from "./tools/Resume";
 
 const ProfileMobile = () => {
   return (
-    <div>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.profileContainer}>
         <div className={styles.backgroundImg}></div>
         <div className={styles.contents}>
           <div className={styles.contactCard}>

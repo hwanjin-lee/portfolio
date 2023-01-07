@@ -1,4 +1,4 @@
-.container {
+.profileContainer {
     background-color: var(--color-box);
     border-radius: 0 0 1rem 1rem;
     padding-bottom: 1rem;
@@ -110,7 +110,7 @@
 
 
 @media only screen and (min-width: 720px) {
-    .container {
+    .profileContainer {
         border-radius: 1rem;
         margin: 1rem 0 2.5rem 0;
     }
