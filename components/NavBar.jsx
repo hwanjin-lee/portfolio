@@ -10,7 +10,21 @@ const NavBar = ({ onToggle, darkTheme, navHeader }) => {
     <div className={styles.container}>
       <div className={styles.logo}>
         <Link href="/">
-          <Image src="/img/logo.png" alt="" width="40px" height="40px" />
+          {darkTheme ? (
+            <Image
+              src="/img/hlLogoDark.png"
+              alt=""
+              width="30px"
+              height="40px"
+            />
+          ) : (
+            <Image
+              src="/img/hlLogoLight.png"
+              alt=""
+              width="30px"
+              height="40px"
+            />
+          )}
         </Link>
       </div>
       <ScrollHighlightNabbar navHeader={navHeader} />

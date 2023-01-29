@@ -10,8 +10,14 @@
     padding: 0 2rem;
 }
 
+.imageContainer {
+  width: 40px;
+  height: 40px;
+}
+
 .logo {
   cursor: pointer;
+  padding-left: 10px;
 }
 
 
