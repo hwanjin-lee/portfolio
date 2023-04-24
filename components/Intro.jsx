@@ -34,7 +34,7 @@ const Intro = () => {
               />
             </div>
             <div className={styles.textSwap} data-replace="Web Developer">
-              <span>Full-Stack Developer</span>
+              <span>Developer</span>
             </div>
           </div>
           <div className={styles.content}>
@@ -47,7 +47,7 @@ const Intro = () => {
               />
             </div>
             <div className={styles.textSwap} data-replace="3D Artist">
-              <span>3D/Motion Artist</span>
+              <span>Graphic Designer</span>
             </div>
           </div>
           <div className={styles.content}>
@@ -60,7 +60,7 @@ const Intro = () => {
               />
             </div>
             <div className={styles.textSwap} data-replace="Graphic Designer">
-              <span>Graphic Designer</span>
+              <span>UI Designer</span>
             </div>
           </div>
         </div>
