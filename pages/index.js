@@ -33,7 +33,7 @@ const HomePage = ({section1Ref, section2Ref, section3Ref, section4Ref, onComment
           <Experiences onComment={onComment}/>
         </div>
         <div className="section" ref={section4Ref} id="blog">
-          <Blog/>
+          {/* <Blog/> */}
         </div>
       </div>
   );
