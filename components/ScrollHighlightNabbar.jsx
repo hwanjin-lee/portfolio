@@ -95,8 +95,11 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
     };
   }, []);
 
+  console.log(activeIndex);
+
   return (
     <div className={styles.container}>
+      {/* section start =============================== */}
       <div className={styles.section}>
         <a
           href={`#${navHeader[0].headerID}`}
@@ -120,6 +123,7 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
           }}
         ></div>
       </div>
+      {/* section start =============================== */}
       <div className={styles.section}>
         <a
           href={`#${navHeader[1].headerID}`}
@@ -130,7 +134,7 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
         >
           <div className={styles.navButton}>
             <FontAwesomeIcon
-              icon={activeIndex === 1 ? fasUser : farUser}
+              icon={activeIndex === 1 ? fasFloppyDisk : farFloppyDisk}
               className={styles.icon}
             />
             <div className={styles.navtitle}>{navHeader[1].headerTitle}</div>
@@ -143,6 +147,7 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
           }}
         ></div>
       </div>
+      {/* section start =============================== */}
       <div className={styles.section}>
         <a
           href={`#${navHeader[2].headerID}`}
@@ -153,7 +158,7 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
         >
           <div className={styles.navButton}>
             <FontAwesomeIcon
-              icon={activeIndex === 2 ? fasFloppyDisk : farFloppyDisk}
+              icon={activeIndex === 2 ? fasUser : farUser}
               className={styles.icon}
             />
             <div className={styles.navtitle}>{navHeader[2].headerTitle}</div>
@@ -166,6 +171,7 @@ const ScrollHighlightNabbar = ({ navHeader }) => {
           }}
         ></div>
       </div>
+      {/* section start =============================== */}
       <div className={styles.section}>
         <a
           href={`#${navHeader[3].headerID}`}

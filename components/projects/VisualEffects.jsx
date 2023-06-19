@@ -6,16 +6,13 @@ import Image from "next/image";
 import { styleOfFullPicture } from "../tools/seeMore";
 
 const VisualEffects = ({ onComment }) => {
-  const [src, setSrc] = useState("/img/projects/example/default.png");
-  const [fullPicture, setFullPicture] = useState(false);
+  const [readMoreExpanded, setReadMoreExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const handleSrc = (newSrc) => {
-    setSrc((src = newSrc));
-    if (fullPicture === false) {
-      setFullPicture(true);
-    } else if (fullPicture === true) {
-      setFullPicture(false);
-    }
+  const toggleExpand = (index) => {
+    setCurrentImageIndex(index);
+    setIsExpanded(!isExpanded);
   };
 
   const pictures = [
@@ -29,7 +26,15 @@ const VisualEffects = ({ onComment }) => {
 
   return (
     <div className="boxManualPadding">
-      <div id="work"></div>
+      {isExpanded && (
+        <div className="overlay" onClick={toggleExpand}>
+          <img
+            className="fullPicture"
+            src={pictures[currentImageIndex].src}
+            alt="Full-size Image"
+          />
+        </div>
+      )}
       <div className="headerPadding">
         <div className="boxHeader">
           <div className="boxFlex">
@@ -58,79 +63,15 @@ const VisualEffects = ({ onComment }) => {
           opportunity to collaborate with other creatives.
         </div>
       </div>
-      <div
-        className={styleOfFullPicture(fullPicture)}
-        onClick={() => handleSrc("/img/projects/example/default.png")}
-      >
-        <Image src={`${src}`} layout="fill" className="fullPictureImage" />
-      </div>
-      <div className="boxPicture">
-        <div
-          className="imageContainer"
-          onClick={() => handleSrc(pictures[0].src)}
-        >
-          <Image
-            src={pictures[0].src}
-            alt={pictures[0].alt}
-            layout="fill"
-            className="image"
+      <div className="postPictures">
+        {pictures.map((pic, index) => (
+          <img
+            className="imgFit"
+            src={pic.src}
+            onClick={() => toggleExpand(index)}
+            style={{ cursor: "pointer" }}
           />
-        </div>
-        <div
-          className="imageContainer"
-          onClick={() => handleSrc(pictures[1].src)}
-        >
-          <Image
-            src={pictures[1].src}
-            alt={pictures[1].alt}
-            layout="fill"
-            className="image"
-          />
-        </div>
-        <div
-          className="imageContainer"
-          onClick={() => handleSrc(pictures[2].src)}
-        >
-          <Image
-            src={pictures[2].src}
-            alt={pictures[2].alt}
-            layout="fill"
-            className="image"
-          />
-        </div>
-        <div
-          className="imageContainer"
-          onClick={() => handleSrc(pictures[3].src)}
-        >
-          <Image
-            src={pictures[3].src}
-            alt={pictures[3].alt}
-            layout="fill"
-            className="image"
-          />
-        </div>
-        <div
-          className="imageContainer"
-          onClick={() => handleSrc(pictures[4].src)}
-        >
-          <Image
-            src={pictures[4].src}
-            alt={pictures[4].alt}
-            layout="fill"
-            className="image"
-          />
-        </div>
-        <div
-          className="imageContainer"
-          onClick={() => handleSrc(pictures[5].src)}
-        >
-          <Image
-            src={pictures[5].src}
-            alt={pictures[5].alt}
-            layout="fill"
-            className="image"
-          />
-        </div>
+        ))}
       </div>
       <div className="descPadding">
         <hr />

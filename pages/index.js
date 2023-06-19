@@ -24,16 +24,16 @@ const HomePage = ({section1Ref, section2Ref, section3Ref, section4Ref, onComment
           <Personality/>
           <Intro/>
         </div>
-        <div className="section" ref={section2Ref} id="about">
+        <div className="section" ref={section2Ref} id="work">
+          <Experiences onComment={onComment}/>
+        </div>
+        <div className="section" ref={section3Ref} id="about">
           <About onComment={onComment}/>
           <LanguagesMobile onComment={onComment}/>
           <Education onComment={onComment}/>
         </div>
-        <div className="section" ref={section3Ref} id="work">
-          <Experiences onComment={onComment}/>
-        </div>
         <div className="section" ref={section4Ref} id="blog">
-          {/* <Blog/> */}
+          <Blog/>
         </div>
       </div>
   );

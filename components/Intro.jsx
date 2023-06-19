@@ -14,7 +14,7 @@ const Intro = () => {
             </div>
             <div className={styles.post}>
               <div className={styles.fakeInput}>
-                Hello, I&apos;m Hwanjin! I am a...
+                Hello there! Welcome to my Portfolio. I am a...
               </div>
             </div>
           </div>
@@ -33,9 +33,7 @@ const Intro = () => {
                 height="36px"
               />
             </div>
-            <div className={styles.textSwap} data-replace="Web Developer">
-              <span>Developer</span>
-            </div>
+            <span>Web Developer</span>
           </div>
           <div className={styles.content}>
             <div className={styles.img}>
@@ -46,9 +44,7 @@ const Intro = () => {
                 height="36px"
               />
             </div>
-            <div className={styles.textSwap} data-replace="3D Artist">
-              <span>Graphic Designer</span>
-            </div>
+            <span>Graphic Designer</span>
           </div>
           <div className={styles.content}>
             <div className={styles.img}>
@@ -59,9 +55,7 @@ const Intro = () => {
                 height="36px"
               />
             </div>
-            <div className={styles.textSwap} data-replace="Graphic Designer">
-              <span>UI Designer</span>
-            </div>
+            <span>UI Designer</span>
           </div>
         </div>
       </div>

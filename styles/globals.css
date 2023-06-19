@@ -19,10 +19,10 @@ body {
   scrollbar-width: none;
   scroll-padding-top: 7rem;
   line-height: 1;
-  user-select: none; /* standard */
-  -moz-user-select: none; /* firefox specific */
-  -webkit-user-select: none; /* Chrome, Opera and Safari*/
-  -ms-user-select: none; /* IE, ms-edge */
+  /* user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; */
 }
 body {
   font-size: 1.6rem;
@@ -55,7 +55,7 @@ body {
 [data-theme='dark'] {
   --color-background: #121212;
   --color-primary: #2A2A2A;
-  --color-primary-accent: #9FA8DA;
+  --color-primary-accent: #8a9af3;
   --color-primary-font: #E8EAF6;
   --color-primary-font-reverse: #000;
   --color-secondary-font: #B3B3B3;
@@ -66,11 +66,15 @@ body {
   --color-input: #535353;
   --color-input-focus: #2A2A2A;
   --color-post: #fff;
-  --color-link: #3F51B5;
+  --color-link: #8a9af3;
   --color-navIcon: #B3B3B3;
   --color-interest: #535874;
   --color-navMenuButton: #535353;
 }
+
+/* img {
+  background-color: var(--color-box);
+} */
 
 hr {
   height: 1px;
@@ -224,9 +228,9 @@ a:visited {
 }
 
 .boxHeaderImg {
-  background-color: #fff;
-  width: 36px;
-  height: 36px;
+  /* background-color: #fff; */
+  width: 34px;
+  height: 34px;
   border-radius: 3rem;
   overflow: hidden;
 }
@@ -242,8 +246,12 @@ a:visited {
   flex-wrap: wrap;
 }
 
-.spaceLeft {
+.spaceRight {
+  margin-right: 0.5rem;
+}
+.spaceLeftRight {
   margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .boxPrimary {
@@ -256,6 +264,10 @@ a:visited {
 
 .boxHeaderTitle {
   padding-left: 1rem;
+}
+
+.spaceLeft {
+  padding-left: 0.3rem;
 }
 
 input,
@@ -345,4 +357,82 @@ a:hover {
   margin: 0.5rem;
   padding: 0.5rem;
   background-color: #000;
+}
+
+.whiteBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.iconSectionTitle {
+  padding: 0 0 1rem 0.4rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.readMoreReducedHeight {
+  height: 800px;
+  overflow: hidden;
+}
+
+.readMoreButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  color: #535353;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.readMoreButton:hover {
+  color: var(--color-primary-accent);
+  font-weight: 600;
+}
+
+.imgFit {
+  width: 300px;
+}
+
+.postPictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.fullPicture {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.links a {
+  color: var(--color-link);
+  transform: all 0.5s linear;
+}
+
+.links a:hover {
+  color: orange;
 }

@@ -50,14 +50,14 @@ function MyApp({ Component, pageProps }) {
       headerID: "home",
     },
     {
-      headerTitle: "About",
+      headerTitle: "Work",
       headerRef: section2Ref,
-      headerID: "about",
+      headerID: "work",
     },
     {
-      headerTitle: "Work",
+      headerTitle: "About",
       headerRef: section3Ref,
-      headerID: "work",
+      headerID: "about",
     },
     {
       headerTitle: "Blog",
