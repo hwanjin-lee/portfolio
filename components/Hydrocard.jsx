@@ -28,11 +28,14 @@ const Hydrocard = ({ onComment }) => {
       <div className="box">
         {isExpanded && (
           <div className="overlay" onClick={toggleExpand}>
-            <img
-              className="fullPicture"
-              src={pictures[currentImageIndex].src}
-              alt="Full-size Image"
-            />
+            <div style={{ width: "90%", height: "90%", position: "relative" }}>
+              <Image
+                alt="Full-size Image"
+                src={pictures[currentImageIndex].src}
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
           </div>
         )}
         <div className="boxHeader">
@@ -71,16 +74,20 @@ const Hydrocard = ({ onComment }) => {
             software that offers ease of use, robust security, error-free
             functionality, and, best of all, free of charge.
           </div>
-          <div className="postPictures">
-            {pictures.map((pic, index) => (
-              <img
-                className="imgFit"
-                src={pic.src}
-                onClick={() => toggleExpand(index)}
-                style={{ cursor: "pointer" }}
-              />
-            ))}
-          </div>
+          {pictures.map((pic, index) => (
+            <Image
+              key={index}
+              src={pic.src}
+              onClick={() => toggleExpand(index)}
+              style={{ cursor: "pointer" }}
+              alt=""
+              title=""
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"
+            />
+          ))}
           <div className="flex">
             <div>To read my story of how I started this project,</div>
             <div className="spaceLeft">

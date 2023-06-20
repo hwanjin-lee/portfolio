@@ -28,11 +28,16 @@ const NextjsProject = ({ onComment }) => {
         <div className="box">
           {isExpanded && (
             <div className="overlay" onClick={toggleExpand}>
-              <img
-                className="fullPicture"
-                src={pictures[currentImageIndex].src}
-                alt="Full-size Image"
-              />
+              <div
+                style={{ width: "90%", height: "90%", position: "relative" }}
+              >
+                <Image
+                  alt="Full-size Image"
+                  src={pictures[currentImageIndex].src}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
             </div>
           )}
           <div className="boxHeader">
@@ -47,13 +52,9 @@ const NextjsProject = ({ onComment }) => {
               </div>
               <div className="boxHeaderTitle">
                 <div className="boxPrimary">
-                  <a target="_blank">
-                    <div>Hydrocard (www.hydrocard.app)</div>
-                  </a>
+                  Hannah, permanent makeup website
                 </div>
-                <div className="boxSecondary">
-                  Project: Prepaid balance management web app
-                </div>
+                <div className="boxSecondary">Project: Scheudling web app</div>
               </div>
             </div>
             <div>
@@ -85,25 +86,27 @@ const NextjsProject = ({ onComment }) => {
               create websites that was more dynamic in nature.
             </div>
             <br />
-            <div className="postPictures">
-              {pictures.map((pic, index) => (
-                <img
-                  key={index}
-                  alt=""
-                  className="imgFit"
-                  src={pic.src}
-                  onClick={() => toggleExpand(index)}
-                  style={{ cursor: "pointer" }}
-                />
-              ))}
-              <div className="videoplayer">
-                <video width="100%" controls>
-                  <source
-                    src="/img/projects/nextjsProject/nextjsprojectshowcase.mp4"
-                    type="video/mp4"
-                  ></source>
-                </video>
-              </div>
+            {pictures.map((pic, index) => (
+              <Image
+                key={index}
+                src={pic.src}
+                onClick={() => toggleExpand(index)}
+                style={{ cursor: "pointer" }}
+                alt=""
+                title=""
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="contain"
+              />
+            ))}
+            <div className="videoplayer">
+              <video width="100%" controls>
+                <source
+                  src="/img/projects/nextjsProject/nextjsprojectshowcase.mp4"
+                  type="video/mp4"
+                ></source>
+              </video>
             </div>
           </div>
           <hr />

@@ -62,7 +62,12 @@ const ExampleProject = ({ onComment }) => {
         className={styleOfFullPicture(fullPicture)}
         onClick={() => handleSrc("/img/projects/example/default.png")}
       >
-        <Image src={`${src}`} layout="fill" className="fullPictureImage" />
+        <Image
+          src={`${src}`}
+          alt=""
+          layout="fill"
+          className="fullPictureImage"
+        />
       </div>
       <div className="boxPicture">
         <div

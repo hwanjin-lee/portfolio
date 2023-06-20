@@ -28,11 +28,14 @@ const VisualEffects = ({ onComment }) => {
     <div className="boxManualPadding">
       {isExpanded && (
         <div className="overlay" onClick={toggleExpand}>
-          <img
-            className="fullPicture"
-            src={pictures[currentImageIndex].src}
-            alt="Full-size Image"
-          />
+          <div style={{ width: "90%", height: "90%", position: "relative" }}>
+            <Image
+              alt="Full-size Image"
+              src={pictures[currentImageIndex].src}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
         </div>
       )}
       <div className="headerPadding">
@@ -63,7 +66,7 @@ const VisualEffects = ({ onComment }) => {
           opportunity to collaborate with other creatives.
         </div>
       </div>
-      <div className="postPictures">
+      {/* <div className="postPictures">
         {pictures.map((pic, index) => (
           <img
             key={index}
@@ -74,7 +77,21 @@ const VisualEffects = ({ onComment }) => {
             style={{ cursor: "pointer" }}
           />
         ))}
-      </div>
+      </div> */}
+      {pictures.map((pic, index) => (
+        <Image
+          key={index}
+          src={pic.src}
+          onClick={() => toggleExpand(index)}
+          style={{ cursor: "pointer" }}
+          alt=""
+          title=""
+          width="100%"
+          height="100%"
+          layout="responsive"
+          objectFit="contain"
+        />
+      ))}
       <div className="descPadding">
         <hr />
         <div className="flexWrap">
