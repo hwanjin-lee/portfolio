@@ -72,10 +72,10 @@ const NextjsProject = ({ onComment }) => {
               The website for this project allows customers to schedule
               appointments online based off of available time slots. Once
               booked, these appointments are integrated into the business
-              owner's scheduling table, ensuring effortless readability.
+              owner&apos;s scheduling table, ensuring effortless readability.
               Moreover, the website features interfaces that gives owners
-              ability to make updates to their store's information, including
-              pricing details and operating hours.
+              ability to make updates to their store&apos;s information,
+              including pricing details and operating hours.
             </div>
             <br />
             <div>
@@ -88,6 +88,8 @@ const NextjsProject = ({ onComment }) => {
             <div className="postPictures">
               {pictures.map((pic, index) => (
                 <img
+                  key={index}
+                  alt=""
                   className="imgFit"
                   src={pic.src}
                   onClick={() => toggleExpand(index)}

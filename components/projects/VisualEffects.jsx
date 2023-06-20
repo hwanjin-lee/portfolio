@@ -66,6 +66,8 @@ const VisualEffects = ({ onComment }) => {
       <div className="postPictures">
         {pictures.map((pic, index) => (
           <img
+            key={index}
+            alt=""
             className="imgFit"
             src={pic.src}
             onClick={() => toggleExpand(index)}

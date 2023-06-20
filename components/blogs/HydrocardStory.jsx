@@ -28,19 +28,22 @@ const HydrocardStory = ({ onComment }) => {
             Why I Made Prepaid Balance Management for Water and Ice Stores
           </h1>
           <div className="flexCenter">
-            <img src="/img/hero.svg" alt="" />
+            {/* <img src="/img/hero.svg" alt="" width="300px" height="378px" /> */}
+            <div className="nextImage">
+              <Image src="/img/hero.svg" alt="" width="300px" height="378px" />
+            </div>
           </div>
           <div>
             <div className="bold">Introduction:</div>
             <div>
               For as long as I can remember, I have been getting filtered water
-              in 5-gallon jugs from "water and ice" stores. Living in Arizona,
-              where tap water is as hard as cement, relying on these stores with
-              their massive water filters has become a lifestyle choice for me.
-              However, as I became more passionate about development, I started
-              noticing flaws in the prepaid management systems employed by these
-              stores. This realization prompted me to embark on a project to
-              improve their payment processes.
+              in 5-gallon jugs from &quot;water and ice&quot; stores. Living in
+              Arizona, where tap water is as hard as cement, relying on these
+              stores with their massive water filters has become a lifestyle
+              choice for me. However, as I became more passionate about
+              development, I started noticing flaws in the prepaid management
+              systems employed by these stores. This realization prompted me to
+              embark on a project to improve their payment processes.
             </div>
           </div>
           <br />
@@ -66,26 +69,29 @@ const HydrocardStory = ({ onComment }) => {
               straightforward, it had drawbacks. As the number of customers
               increased, it became increasingly challenging to sort through the
               cards. Moreover, these cards had to be discarded once the balance
-              was depleted, requiring the customer's name to be recorded on a
-              new card if they did not recharge their balance beforehand. I
+              was depleted, requiring the customer&apos;s name to be recorded on
+              a new card if they did not recharge their balance beforehand. I
               found this counterproductive and time-consuming. Alternatively,
               some stores relied on plastic gift cards, primarily utilizing
-              Square's system for accepting payments. While these gift cards
-              were typically designed for gifting purposes, these businesses
-              repurposed them to recharge prepaid balances. They stored the
-              cards securely and retrieved them when customers returned.
+              Square&apos;s system for accepting payments. While these gift
+              cards were typically designed for gifting purposes, these
+              businesses repurposed them to recharge prepaid balances. They
+              stored the cards securely and retrieved them when customers
+              returned.
             </div>
           </div>
           <br />
           <div>
-            <div className="bold">Square's Gift Card Service Limitations:</div>
+            <div className="bold">
+              Square&apos;s Gift Card Service Limitations:
+            </div>
             <div>
-              Initially, I assumed that Square's gift card service would provide
-              a solution to the problem I sought to address. However, upon
-              further contemplation, I realized that Square could not cater to
-              every niche business. Consequently, the gift card system was their
-              best approach for accommodating prepaid balance management in
-              water and ice stores. Nevertheless, I felt there must be more
+              Initially, I assumed that Square&apos;s gift card service would
+              provide a solution to the problem I sought to address. However,
+              upon further contemplation, I realized that Square could not cater
+              to every niche business. Consequently, the gift card system was
+              their best approach for accommodating prepaid balance management
+              in water and ice stores. Nevertheless, I felt there must be more
               efficient methods available.
             </div>
           </div>
@@ -111,12 +117,13 @@ const HydrocardStory = ({ onComment }) => {
             <div>
               As I contemplated the issue further, I began envisioning more
               efficient ways to manage prepaid balances. For instance, even with
-              Square's gift card method, store owners still had to physically
-              sort through the cards to process transactions during return
-              visits, mirroring the process of stores using paper forms of
-              balance cards. Moreover, both methods left room for errors, as a
-              different name mentioned at the register could lead to the
-              deduction of another customer's balance, posing a security risk.
+              Square&apos;s gift card method, store owners still had to
+              physically sort through the cards to process transactions during
+              return visits, mirroring the process of stores using paper forms
+              of balance cards. Moreover, both methods left room for errors, as
+              a different name mentioned at the register could lead to the
+              deduction of another customer&apos;s balance, posing a security
+              risk.
             </div>
           </div>
           <br />
@@ -126,9 +133,9 @@ const HydrocardStory = ({ onComment }) => {
               During my interviews with store owners and workers, I gained
               valuable insights into their concerns regarding the prepaid
               system. One major complaint was the difficulty of understanding or
-              correctly spelling and pronouncing customers' names. Another issue
-              was the sole reliance on a single source for managing prepaid
-              balances.
+              correctly spelling and pronouncing customers&apos; names. Another
+              issue was the sole reliance on a single source for managing
+              prepaid balances.
             </div>
           </div>
           <br />
@@ -141,10 +148,10 @@ const HydrocardStory = ({ onComment }) => {
               previously paid $100 worth of prepaid balance under their name,
               but the clerk could not locate the corresponding card. This
               particular store used paper forms for balance management, and the
-              clerk's repeated search through the cards failed to find the
-              prepaid balance card under the customer's name. No one knew who
-              was at fault—whether the customer was mistaken, attempting to scam
-              the store, or if the store had genuinely lost the card.
+              clerk&apos;s repeated search through the cards failed to find the
+              prepaid balance card under the customer&apos;s name. No one knew
+              who was at fault—whether the customer was mistaken, attempting to
+              scam the store, or if the store had genuinely lost the card.
             </div>
           </div>
           <br />
@@ -183,16 +190,16 @@ const HydrocardStory = ({ onComment }) => {
             <div>
               One of the key challenges I aimed to solve was the time-consuming
               process of searching for customer information and manually
-              managing balances. To streamline this, I integrated Twilio's SMS
-              functionality through AWS Lambda. When customers registered, the
-              web app automatically sent them a text message containing a unique
-              QR code ID. This QR code could be conveniently scanned to
-              instantly retrieve the customer's information and balances,
+              managing balances. To streamline this, I integrated Twilio&apos;s
+              SMS functionality through AWS Lambda. When customers registered,
+              the web app automatically sent them a text message containing a
+              unique QR code ID. This QR code could be conveniently scanned to
+              instantly retrieve the customer&apos;s information and balances,
               eliminating the need for manual entry and reducing the potential
               for errors. This not only made transactions faster but also
               enhanced security by ensuring that each transaction was associated
-              with the correct customer's account, minimizing the risk of using
-              someone else's balance.
+              with the correct customer&apos;s account, minimizing the risk of
+              using someone else&apos;s balance.
             </div>
             <br />
             <div>
@@ -213,13 +220,13 @@ const HydrocardStory = ({ onComment }) => {
             <br />
             <div>
               In conclusion, the web app I developed utilizing AWS Amplify,
-              Cognito, DynamoDB, and Twilio's SMS functionality has transformed
-              prepaid balance management for water and ice stores. By addressing
-              the flaws of traditional systems and introducing innovative
-              features, it has created a seamless and secure payment experience.
-              With this solution, water and ice stores can now provide faster
-              transactions, reduce operational costs, and enhance customer
-              satisfaction.
+              Cognito, DynamoDB, and Twilio&apos;s SMS functionality has
+              transformed prepaid balance management for water and ice stores.
+              By addressing the flaws of traditional systems and introducing
+              innovative features, it has created a seamless and secure payment
+              experience. With this solution, water and ice stores can now
+              provide faster transactions, reduce operational costs, and enhance
+              customer satisfaction.
             </div>
           </div>
           <br />

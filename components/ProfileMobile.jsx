@@ -52,12 +52,12 @@ const ProfileMobile = () => {
           </div>
           <hr />
           <div className={styles.interests}>
-            <div className={styles.interestBox}>#road trips</div>
-            <div className={styles.interestBox}>#cats</div>
-            <div className={styles.interestBox}>#snowboarding</div>
-            <div className={styles.interestBox}>#surfing</div>
-            <div className={styles.interestBox}>#hiking</div>
-            <div className={styles.interestBox}>#gunpla</div>
+            <div className={styles.interestBox}>#Web Developement</div>
+            <div className={styles.interestBox}>#UI/UX</div>
+            <div className={styles.interestBox}>#Graphic Design</div>
+            <div className={styles.interestBox}>#AWS</div>
+            <div className={styles.interestBox}>#Problem Solving</div>
+            <div className={styles.interestBox}>#Outside Activities</div>
           </div>
           <hr />
           <ContactLinks />
