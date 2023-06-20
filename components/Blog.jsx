@@ -1,6 +1,6 @@
 import React from "react";
-import BeginningStory from "./blogs/beginningStory";
-import HydrocardStory from "./blogs/hydrocardStory";
+import BeginningStory from "./blogs/BeginningStory";
+import HydrocardStory from "./blogs/HydrocardStory";
 
 const Blog = ({ onComment }) => {
   return (
