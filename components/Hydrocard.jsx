@@ -16,10 +16,10 @@ const Hydrocard = ({ onComment }) => {
   };
 
   const pictures = [
+    { src: "/img/projects/hydrocard/hydrocard4.png", alt: "" },
     { src: "/img/projects/hydrocard/hydrocard1.png", alt: "" },
     { src: "/img/projects/hydrocard/hydrocard2.png", alt: "" },
     { src: "/img/projects/hydrocard/hydrocard3.png", alt: "" },
-    { src: "/img/projects/hydrocard/hydrocard4.png", alt: "" },
   ];
 
   return (
@@ -66,7 +66,7 @@ const Hydrocard = ({ onComment }) => {
           </div>
         </div>
         {/* <div className={readMoreExpanded ? "" : "readMoreReducedHeight"}> */}
-        <div>
+        <div className={readMoreExpanded ? "" : "readMoreReducedHeight"}>
           <div>
             Upon witnessing the persistent challenges faced by my local
             water/ice store in managing prepaid balances for their customers, I
@@ -109,7 +109,7 @@ const Hydrocard = ({ onComment }) => {
             </div>
           </div>
         </div>
-        {/* <div
+        <div
           className="readMoreButton"
           onClick={() =>
             readMoreExpanded
@@ -118,7 +118,7 @@ const Hydrocard = ({ onComment }) => {
           }
         >
           {readMoreExpanded ? "read less" : "read more"}
-        </div> */}
+        </div>
         <hr />
         <div className="flexWrap">
           <UsedStacks title={"React"} />

@@ -60,38 +60,38 @@ const VisualEffects = ({ onComment }) => {
           </div>
         </div>
       </div>
-      <div className="descPadding">
-        <div>
-          Here are a few of my past creative projects where I had the
-          opportunity to collaborate with other creatives.
+      <div className={readMoreExpanded ? "" : "readMoreReducedHeight"}>
+        <div className="descPadding">
+          <div>
+            Here are a few of my past creative projects where I had the
+            opportunity to collaborate with other creatives.
+          </div>
         </div>
-      </div>
-      {/* <div className="postPictures">
         {pictures.map((pic, index) => (
-          <img
+          <Image
             key={index}
-            alt=""
-            className="imgFit"
             src={pic.src}
             onClick={() => toggleExpand(index)}
             style={{ cursor: "pointer" }}
+            alt=""
+            title=""
+            width="100%"
+            height="100%"
+            layout="responsive"
+            objectFit="contain"
           />
         ))}
-      </div> */}
-      {pictures.map((pic, index) => (
-        <Image
-          key={index}
-          src={pic.src}
-          onClick={() => toggleExpand(index)}
-          style={{ cursor: "pointer" }}
-          alt=""
-          title=""
-          width="100%"
-          height="100%"
-          layout="responsive"
-          objectFit="contain"
-        />
-      ))}
+      </div>
+      <div
+        className="readMoreButton"
+        onClick={() =>
+          readMoreExpanded
+            ? setReadMoreExpanded(false)
+            : setReadMoreExpanded(true)
+        }
+      >
+        {readMoreExpanded ? "read less" : "read more"}
+      </div>
       <div className="descPadding">
         <hr />
         <div className="flexWrap">

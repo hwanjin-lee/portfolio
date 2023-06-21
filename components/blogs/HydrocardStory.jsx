@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Ellipsis from "../tools/Ellipsis";
 import Likes from "../reusable/Likes";
+import Link from "next/link";
 
 const HydrocardStory = ({ onComment }) => {
   const [expanded, setExpanded] = useState(false);
@@ -245,6 +246,16 @@ const HydrocardStory = ({ onComment }) => {
             </div>
           </div>
           <br />
+          <div className="flex">
+            <div>Go to,</div>
+            <div className="spaceLeft">
+              <Link href="https://hydrocard.app/">
+                <a target="_blank">
+                  <div>Hydrocard's Website (www.hydrocard.app)</div>
+                </a>
+              </Link>
+            </div>
+          </div>
         </div>
         <div
           className="readMoreButton"

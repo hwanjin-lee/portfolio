@@ -15,9 +15,9 @@ const NextjsProject = ({ onComment }) => {
     setIsExpanded(!isExpanded);
   };
   const pictures = [
+    { src: "/img/projects/nextjsProject/photo3.png", alt: "" },
     { src: "/img/projects/nextjsProject/photo1.png", alt: "" },
     { src: "/img/projects/nextjsProject/photo2.png", alt: "" },
-    { src: "/img/projects/nextjsProject/photo3.png", alt: "" },
     { src: "/img/projects/nextjsProject/photo4.png", alt: "" },
   ];
 
@@ -62,7 +62,7 @@ const NextjsProject = ({ onComment }) => {
             </div>
           </div>
           {/* <div className={readMoreExpanded ? "" : "readMoreReducedHeight"}> */}
-          <div>
+          <div className={readMoreExpanded ? "" : "readMoreReducedHeight"}>
             <div>
               As I learned more deeply into web development, I aimed to expand
               my knowledge beyond static web designs, with the purpose to
@@ -108,6 +108,16 @@ const NextjsProject = ({ onComment }) => {
                 ></source>
               </video>
             </div>
+          </div>
+          <div
+            className="readMoreButton"
+            onClick={() =>
+              readMoreExpanded
+                ? setReadMoreExpanded(false)
+                : setReadMoreExpanded(true)
+            }
+          >
+            {readMoreExpanded ? "read less" : "read more"}
           </div>
           <hr />
           <div className="flexWrap">
