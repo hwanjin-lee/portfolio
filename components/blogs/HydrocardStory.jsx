@@ -251,7 +251,7 @@ const HydrocardStory = ({ onComment }) => {
             <div className="spaceLeft">
               <Link href="https://hydrocard.app/">
                 <a target="_blank">
-                  <div>Hydrocard's Website (www.hydrocard.app)</div>
+                  <div>Hydrocard&apos;s Website (www.hydrocard.app)</div>
                 </a>
               </Link>
             </div>
