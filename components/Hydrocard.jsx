@@ -68,11 +68,11 @@ const Hydrocard = ({ onComment }) => {
         {/* <div className={readMoreExpanded ? "" : "readMoreReducedHeight"}> */}
         <div className={readMoreExpanded ? "" : "readMoreReducedHeight"}>
           <div>
-            Upon witnessing the persistent challenges faced by my local
-            water/ice store in managing prepaid balances for their customers, I
-            seized the opportunity to develop prepaid balance management
-            software that offers ease of use, robust security, error-free
-            functionality, and, best of all, free of charge.
+            Self started user-friendly web application to digitize prepaid
+            balance management, seizing the opportunity to improve upon the
+            inefficient processes commonly used by water/ice stores. Developed
+            with little to no money utilizing free tier of AWS for backend,
+            authentication, and database
           </div>
           {pictures.map((pic, index) => (
             <Image
@@ -123,8 +123,13 @@ const Hydrocard = ({ onComment }) => {
         <div className="flexWrap">
           <UsedStacks title={"React"} />
           <UsedStacks title={"Javascript"} />
-          <UsedStacks title={"Node"} />
-          <UsedStacks title={"AWS"} />
+          <UsedStacks title={"AWS Amplify"} />
+          <UsedStacks title={"AWS Cognito"} />
+          <UsedStacks title={"AWS DynomoDB"} />
+          <UsedStacks title={"AWS Lambda"} />
+          <UsedStacks title={"AWS Gateway"} />
+          <UsedStacks title={"Node.js"} />
+          <UsedStacks title={"AWS S3"} />
           <UsedStacks title={"Twilio"} />
         </div>
         <Likes onComment={onComment} />
